@@ -1,16 +1,16 @@
 import React from 'react'
-import Image from './../../img/UML-Composite-1.png'
-import Image2 from './../../img/UML-Composite-2.png'
+import Image from './../../../img/UML-Composite-1.png'
+import Image2 from './../../../img/UML-Composite-2.png'
 
-const DiagrammeCompositeStructure = () => {
+const CompositeStructureDiagram = () => {
     return (
-        <article class="article" id="diagramme-de-structures-composites-UML">
-            <p class="subtitle">Diagramme de structures composites UML</p>
+        <article className="article" id="diagramme-de-structures-composites-UML">
+            <p className="subtitle">Diagramme de structures composites UML</p>
             <p>Un diagramme de structure composite est un diagramme structurel UML qui fournit une vue
                 d'ensemble logique de l'ensemble ou d'une partie d'un système logiciel. Il permet de visualiser
                 un classifieur structuré donné, en définissant ses classes de configuration, ses interfaces, ses
                 packages et les liens qui les unissent dans le détail.</p>
-            <div class="img-article">
+            <div className="img-article">
                 <img src={Image} alt="exemple de diagramme de structures composites UML" />
             </div>
             <p>Un diagramme de structure composite permet aux utilisateurs de déterminer précisément ce qui est
@@ -58,7 +58,7 @@ const DiagrammeCompositeStructure = () => {
                 transmettre des informations concrètes et explicites sur les comportements et les associations
                 au sein de votre système, optez pour un diagramme de structure composite.
             </p>
-            <div class="img-article">
+            <div className="img-article">
                 <img src={Image2}
                     alt="autre exemple de diagramme de structures composites UML" />
             </div>
@@ -66,4 +66,4 @@ const DiagrammeCompositeStructure = () => {
     )
 }
 
-export default DiagrammeCompositeStructure
+export default CompositeStructureDiagram

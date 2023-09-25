@@ -1,6 +1,10 @@
 import React from 'react'
-import DiagrammeClass from './Diagrams&Models/DiagrammeClass'
-import DiagrammeObject from './Diagrams&Models/DiagrammeObject'
+//Structure Diagrams
+import ClassDiagram from './Diagrams&Models/structureDiagrams/ClassDiagram'
+import ObjectDiagram from './Diagrams&Models/structureDiagrams/ObjectDiagram'
+import ComponantDiagram from './Diagrams&Models/structureDiagrams/ComponantDiagram'
+import CompositeStructureDiagram from './Diagrams&Models/structureDiagrams/CompositeStructureDiagram'
+import DeploymentDiagram from './Diagrams&Models/structureDiagrams/DeploymentDiagram'
 import Presentation from './Diagrams&Models/Presentation'
 
 const Article = ({ selectedButton }) => {
@@ -12,13 +16,19 @@ const Article = ({ selectedButton }) => {
         {(() => {
           switch (selectedButton) {
             case 'class-diagram':
-              return <DiagrammeClass />;
-            case 'object':
-              return <DiagrammeObject />;
+              return <ClassDiagram />;
+            case 'object-diagram':
+              return <ObjectDiagram />;
+            case 'componant-diagram':
+              return <ComponantDiagram />;
+            case 'composite-structure-diagram':
+              return <CompositeStructureDiagram />;
+            case 'deployment-diagram':
+              return <DeploymentDiagram />;
             case 'presentation':
               return <Presentation />;
-              default:
-                return null;
+            default:
+              return null;
           }
         })()}
       </section>
