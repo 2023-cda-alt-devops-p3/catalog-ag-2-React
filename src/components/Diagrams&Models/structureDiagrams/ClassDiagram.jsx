@@ -1,7 +1,7 @@
 import React from 'react'
-import Image from './../../img/UML-Classes.png'
+import Image from './../../../img/UML-Classes.png'
 
-const DiagrammeClass = () => {
+const ClassDiagram = () => {
     return (
         <article className="article" id="diagramme-de-classes-UML">
             <p className="subtitle">Diagramme de classes UML</p>
@@ -80,4 +80,4 @@ const DiagrammeClass = () => {
     )
 }
 
-export default DiagrammeClass
+export default ClassDiagram

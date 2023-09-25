@@ -1,9 +1,11 @@
 import React from 'react'
+import Image from './../../../img/UML-deploiement-1.png'
+import Image2 from './../../../img/UML-deploiement-2.png'
 
-const DiagrammeDeployment = () => {
+const DeploymentDiagram = () => {
     return (
-        <article class="article" id="diagramme-de-deploiement-UML">
-            <p class="subtitle">Diagramme de deploiement UML</p>
+        <article className="article" id="diagramme-de-deploiement-UML">
+            <p className="subtitle">Diagramme de deploiement UML</p>
             <p>Dans le contexte du langage de modélisation unifié (UML), un diagramme de déploiement fait partie
                 de la catégorie des diagrammes structurels, car il décrit un aspect du système même. Dans le cas
                 présent, le diagramme de déploiement décrit le déploiement physique des informations générées
@@ -40,14 +42,14 @@ const DiagrammeDeployment = () => {
                 <li>Stéréotype : dispositif contenu dans le nœud, présenté dans la partie supérieure du nœud et
                     dont le nom est entouré de flèches doubles.</li>
             </ol>
-            <div class="img-article">
-                <img src="img/UML-deploiement-1.png" alt="autre exemple de diagramme de deploiement UML" />
+            <div className="img-article">
+                <img src={Image} alt="exemple de diagramme de deploiement UML" />
             </div>
-            <div class="img-article">
-                <img src="img/UML-deploiement-2.png" alt="autre exemple de diagramme de deploiement UML" />
+            <div className="img-article">
+                <img src={Image2} alt="autre exemple de diagramme de deploiement UML" />
             </div>
         </article>
     )
 }
 
-export default DiagrammeDeployment
+export default DeploymentDiagram

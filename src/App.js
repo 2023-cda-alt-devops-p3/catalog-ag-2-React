@@ -13,15 +13,15 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <Title />
-      <div className="page">
-        <Nav onButtonClick={handleButtonClick} />
-        <section className="section">
+    <main>
+      <div className="App">
+        <Title />
+        <div className="page">
+          <Nav onButtonClick={handleButtonClick} />
           <Article selectedButton={selectedButton} />
-        </section>
+        </div>
       </div>
-    </div>
+    </main>
   );
 }
 
