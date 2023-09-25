@@ -18,7 +18,7 @@ const Nav = ({ onButtonClick }) => {
 
             <p className="navTitle">Diagrammes UML de comportement</p>
             <ol className="navList">
-                <li><button onClick={() => onButtonClick('user-case-diagram')}>Diagrammes de Cas d'Utilisation</button></li>
+                <li><button onClick={() => onButtonClick('use-case-diagram')}>Diagrammes de Cas d'Utilisation</button></li>
                 <li><button onClick={() => onButtonClick('activity-diagram')}>Diagrammes d'Activité</button></li>
                 <li><button onClick={() => onButtonClick('transition-state-diagram')}>Diagrammes des Etats-Transitions</button></li>
                 <li><button onClick={() => onButtonClick('communication-diagram')}>Diagrammes de Communication</button></li>
@@ -29,7 +29,7 @@ const Nav = ({ onButtonClick }) => {
 
             <p className="navTitle">Diagrammes MERISE</p>
             <ol className="navList">
-                <li><button onClick={() => onButtonClick('MCDt')}>MCD modèle conceptuel des données</button></li>
+                <li><button onClick={() => onButtonClick('MCD')}>MCD modèle conceptuel des données</button></li>
                 <li><button onClick={() => onButtonClick('MPD')}>MPD modèle physique des données</button></li>
                 <li><button onClick={() => onButtonClick('MLD')}>MLD modèle logique des données</button></li>
                 <li><button onClick={() => onButtonClick('MFD')}>MFD modèle de flux de données</button></li>
