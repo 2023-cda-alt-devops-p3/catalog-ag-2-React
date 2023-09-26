@@ -75,7 +75,7 @@ const Article = ({ selectedButton }) => {
             case 'presentation':
               return <Presentation />;
             default:
-              return null;
+              return <Presentation />;
           }
         })()}
       </section>
