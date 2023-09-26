@@ -20,9 +20,6 @@ const CompositeStructureDiagram = () => {
                 fournir des informations précieuses sur la manière dont les structures sont interconnectées,
                 dont les informations sont communiquées, etc.</p>
             <p>Un diagramme de structure composite offre également les avantages suivants :</p>
-            <p>Bien que les diagrammes des composants puissent paraître complexes à première vue, ils sont d'une
-                valeur inestimable pour la conception de votre système. Ils peuvent en effet aider votre équipe
-                à :</p>
             <ol>
                 <li>Il aide les utilisateurs à comprendre l'état actuel de leur système.</li>
                 <li>Il décompose la structure interne de plusieurs classes, interfaces ou composants, et leurs

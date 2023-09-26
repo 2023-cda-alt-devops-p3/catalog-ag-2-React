@@ -1,5 +1,7 @@
 import React from 'react'
 import Image from './../../../img/UML-paquetages-1.png'
+import Image2 from './../../../img/UML-paquetages-2.png'
+import Image3 from './../../../img/UML-paquetages-3.png'
 
 const PackagingDiagram = () => {
     return (
@@ -65,7 +67,14 @@ const PackagingDiagram = () => {
                     d'un autre. En d'autres termes, le contenu de deux paquetages fusionne pour former un
                     nouveau paquetage.</li>
             </ol>
+            <div class="img-article">
+                <img src={Image2} alt="autre exemple de diagramme de paquetages UML" />
+            </div>
+            <div class="img-article">
+                <img src={Image3} alt="autre exemple de diagramme de paquetages UML" />
+            </div>
         </article>
+
     )
 }
 

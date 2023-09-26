@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from './../../../img/UML-Composants-1.png'
 import Image2 from './../../../img/UML-Composants-2.png'
+import Image3 from './../../../img/UML-Composants-3.png'
 
 const ComponantDiagram = () => {
     return (
@@ -36,7 +37,6 @@ const ComponantDiagram = () => {
                 (UML) prévoit que les composants et les packages (ou paquetages, en français) soient reliés les
                 uns aux autres par des lignes représentant les connecteurs d'assemblage et les connecteurs de
                 délégation.</p>
-            <p>Formes et symboles des diagrammes de composants UML</p>
             <p>Les diagrammes de composants s'étendent de la vue d'ensemble sommaire aux modèles plus détaillés
                 et complexes. Quels que soient vos besoins, vous devrez vous familiariser avec les symboles UML
                 appropriés. Voici les différents types de formes qu'il vous faut connaître lorsque vous
@@ -56,7 +56,7 @@ const ComponantDiagram = () => {
                 <li>Symbole de port : Spécifie un point d'interaction distinct entre un composant et son
                     environnement. Les ports sont symbolisés par un petit carré.</li>
                 <li>Symbole de paquetage : Regroupe plusieurs éléments du système et est représenté par des
-                    dossiers de fichiers dans Lucidchart. Tout comme les dossiers de fichiers regroupent
+                    dossiers de fichiers. Tout comme les dossiers de fichiers regroupent
                     plusieurs feuilles, les packages peuvent englober plusieurs éléments.</li>
                 <li>Remarque : Permet aux développeurs d'ajouter une méta-analyse sur le diagramme de
                     composants.</li>
@@ -69,6 +69,9 @@ const ComponantDiagram = () => {
             </div>
             <div className="img-article">
                 <img src={Image2} alt="autre exemple de diagramme de composants UML" />
+            </div>
+            <div className="img-article">
+                <img src={Image3} alt="autre exemple de diagramme de composants UML" />
             </div>
         </article>
     )

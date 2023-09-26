@@ -3,6 +3,7 @@ import Image from './../../../img/UML-cas-utilisation-1.png'
 import Image2 from './../../../img/UML-cas-utilisation-2.png'
 import Image3 from './../../../img/UML-cas-utilisation-3.png'
 import Image4 from './../../../img/UML-cas-utilisation-4.png'
+import Image5 from './../../../img/UML-cas-utilisation-5.png'
 
 const UseCaseDiagram = () => {
     return (
@@ -89,6 +90,10 @@ const UseCaseDiagram = () => {
             </div>
             <div className="img-article">
                 <img src={Image4}
+                    alt="autre exemple de diagramme de cas d'utilisation UML" />
+            </div>
+            <div className="img-article">
+                <img src={Image5}
                     alt="autre exemple de diagramme de cas d'utilisation UML" />
             </div>
         </article>

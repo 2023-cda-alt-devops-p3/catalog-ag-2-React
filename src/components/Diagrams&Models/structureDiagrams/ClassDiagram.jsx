@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from './../../../img/UML-Classes.png'
+import Image2 from './../../../img/UML-Classes-2.png'
 
 const ClassDiagram = () => {
     return (
@@ -76,6 +77,23 @@ const ClassDiagram = () => {
             <div className="img-article">
                 <img src={Image} alt="exemple de diagramme de classes UML" />
             </div>
+            <p>Exemple détaillé d'un diagramme de classes</p>
+            <div className="img-article">
+                <img src={Image2} alt="autre exemple de diagramme de classes UML" />
+            </div>
+            <ol>
+                <li>Shape est une classe abstraite. Il est indiqué en italique.</li>
+                <li>La forme est une super-classe. Cercle, Rectangle et Polygone sont dérivés de Forme. En d'autres termes, un cercle est une forme. Il s'agit d'une relation généralisation/héritage.</li>
+                <li>Il existe une association entre DialogBox et DataController.</li>
+                <li>La forme fait partie de Window. Il s'agit d'une relation d'agrégation. La forme peut exister sans fenêtre.</li>
+                <li>Point fait partie de Circle. Il s'agit d'une relation de composition. Point ne peut pas exister sans cercle.</li>
+                <li>La fenêtre dépend de l'événement. Cependant, Event ne dépend pas de Window.</li>
+                <li>Les attributs du cercle sont le rayon et le centre. Il s'agit d'une classe d'entités.</li>
+                <li>Les noms de méthode de Circle sont area(), circum(), setCenter() et setRadius().</li>
+                <li>Le paramètre radius dans Circle est un paramètre in de type float.</li>
+                <li>La méthode area() de la classe Circle renvoie une valeur de type double.</li>
+                <li>Les attributs et les noms de méthodes de Rectangle sont masqués. Certaines autres classes du diagramme ont également leurs attributs et leurs noms de méthode masqués.</li>
+            </ol>
         </article>
     )
 }

@@ -1,4 +1,6 @@
 import React from 'react'
+import Image from './../../../img/UML-communication-1.png'
+import Image2 from './../../../img/UML-communication-2.png'
 
 const CommunicationDiagram = () => {
     return (
@@ -42,6 +44,15 @@ const CommunicationDiagram = () => {
                     circuler des informations d'une instance, représentée par une ligne de vie, à une autre
                     instance au cours d'une interaction.</li>
             </ol>
+            <div className="img-article">
+                <img src={Image}
+                    alt="exemple de diagramme de communication UML" />
+            </div>
+            <p>exemple du passage d'un diagramme de séquence à un diagramme de communication</p>
+            <div className="img-article">
+                <img src={Image2}
+                    alt="exemple du passage d'un diagramme de séquence à un diagramme de communication UML" />
+            </div>
         </article>
 
     )
