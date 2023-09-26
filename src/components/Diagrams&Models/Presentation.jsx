@@ -5,15 +5,14 @@ const Presentation = () => {
   return (
     <article className="article" id="presentation-UML">
       <p className="subtitle">Presentation de l'UML et des modèles MERISE</p>
-      <p>Le <b>langage de modélisation unifié UML</b> a été développé pour établir un langage de modélisation visuel commun pour l'architecture, la conception et la mise en œuvre de la structure et du comportement des grands systèmes logiciels. UML a des applications en dehors du développement logiciel, comme les processus industriels.</p>
+      <p>Le <b>langage de modélisation unifié UML</b> a été développé pour établir un langage de modélisation visuel commun pour <i>l'architecture, la conception et la mise en œuvre</i> de la structure et du comportement des grands systèmes logiciels. UML a des applications en dehors du développement logiciel, comme les processus industriels.</p>
       <p>Il se compose de nombreux types de diagrammes et est similaire aux plans utilisés dans d'autres domaines. Les diagrammes UML, en général, décrivent les limites, la structure et le comportement d'un système, ainsi que les objets qu'il contient.</p>
       <p>La conception et l'analyse orientées objet sont liées à UML. Pour créer des diagrammes, UML prend des éléments et crée des associations entre eux. Voici quelques exemples de diagrammes UML.</p>
       <ol>
-        <li>Un <b>diagramme structurel</b> décrit les caractéristiques statiques ou la structure d'un système. Des schémas de structure sont présentés. Les diagrammes de composants, les diagrammes d'objets, les diagrammes de classes et les diagrammes de déploiement sont tous des exemples de diagrammes utilisés dans le développement de logiciels.</li>
-        <li>Un <b>diagramme de comportement</b> décrit les caractéristiques dynamiques ou le comportement d'un système. Des diagrammes de comportement sont inclus. Utilisez des diagrammes de cas, des diagrammes d'état, des diagrammes d'activité et des diagrammes d'interaction pour vous aider à visualiser vos idées.</li>
+        <li>Un <b>diagramme structurel</b> décrit les <i>caractéristiques statiques ou la structure d'un système</i>. Des schémas de structure sont présentés. Les diagrammes de composants, les diagrammes d'objets, les diagrammes de classes et les diagrammes de déploiement sont tous des exemples de diagrammes utilisés dans le développement de logiciels.</li>
+        <li>Un <b>diagramme de comportement</b> décrit les <i>caractéristiques dynamiques ou le comportement d'un système</i>. Des diagrammes de comportement sont inclus. Utilisez des diagrammes de cas, des diagrammes d'état, des diagrammes d'activité et des diagrammes d'interaction pour vous aider à visualiser vos idées.</li>
       </ol>
-      <p>Avant de commencer à créer un diagramme d'activités, vous devez d'abord comprendre de quoi il est
-        constitué. Voici quelques-uns des composants les plus courants d'un diagramme d'activités :</p>
+      <p>Voici quelques-uns des composants les plus courants d'un diagramme d'activités :</p>
       <div className="img-article">
         <img src={Image} alt="exemple avec les types de diagrammes UML" />
       </div>
