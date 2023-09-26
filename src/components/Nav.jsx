@@ -5,6 +5,10 @@ const Nav = ({ onButtonClick }) => {
     return (
 
         <nav className="nav">
+            <ol className="navList">
+                <li><button onClick={() => onButtonClick('presentation')}>UML & MERISE</button>
+                </li>
+            </ol>
             <p className="navTitle">Diagrammes UML de structure</p>
             <ol className="navList">
                 <li><button onClick={() => onButtonClick('class-diagram')}>Diagrammes de classes</button></li>
