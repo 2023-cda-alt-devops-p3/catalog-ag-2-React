@@ -3,6 +3,7 @@ import './App.css';
 import Title from './components/Title'
 import Nav from './components/Nav'
 import Article from './components/Article';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <Article selectedButton={selectedButton} />
         </div>
       </div>
+      <Footer />
     </main>
   );
 }

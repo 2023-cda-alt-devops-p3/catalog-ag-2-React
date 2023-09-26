@@ -97,6 +97,7 @@ img {
   width: 100%;
   max-width: 700px;
   height: auto;
+  margin: 10px 0px;
 }
 
 .img-article {
@@ -130,4 +131,14 @@ button:hover {
   cursor: pointer;
   background-color: green;
   color: white;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: green;
+  text-align: center;
+  padding: 10px 0px;
 }
