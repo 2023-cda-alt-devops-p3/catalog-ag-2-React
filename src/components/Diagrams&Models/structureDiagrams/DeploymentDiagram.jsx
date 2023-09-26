@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from './../../../img/UML-deploiement-1.png'
 import Image2 from './../../../img/UML-deploiement-2.png'
+import Image3 from './../../../img/UML-deploiement-3.png'
 
 const DeploymentDiagram = () => {
     return (
@@ -47,6 +48,9 @@ const DeploymentDiagram = () => {
             </div>
             <div className="img-article">
                 <img src={Image2} alt="autre exemple de diagramme de deploiement UML" />
+            </div>
+            <div className="img-article">
+                <img src={Image3} alt="autre exemple de diagramme de deploiement UML" />
             </div>
         </article>
     )

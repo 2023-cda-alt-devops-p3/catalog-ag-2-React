@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from './../../../img/UML-etats-transitions-1.png'
 import Image2 from './../../../img/UML-etats-transitions-2.png'
+import Image3 from './../../../img/UML-etats-transitions-3.png'
 
 const StateTransitionDiagram = () => {
   return (
@@ -39,6 +40,10 @@ const StateTransitionDiagram = () => {
                     </div>
                     <div className="img-article">
                         <img src={Image2}
+                            alt="autre exemple de diagramme d'états-transitions UML" />
+                    </div>
+                    <div className="img-article">
+                        <img src={Image3}
                             alt="autre exemple de diagramme d'états-transitions UML" />
                     </div>
                 </article>
