@@ -2,6 +2,7 @@ import React from 'react'
 import Image from './../../../img/UML-apercu-interaction-1.png'
 import Image2 from './../../../img/UML-apercu-interaction-2.png'
 import Image3 from './../../../img/UML-apercu-interaction-3.png'
+import Image4 from './../../../img/UML-apercu-interaction-4.png'
 
 const InteractionDiagram = () => {
     return (
@@ -36,6 +37,11 @@ const InteractionDiagram = () => {
             </p>
             <div className="img-article">
                 <img src={Image3}
+                    alt="autre exemple de diagramme d'aperçu d'interaction UML" />
+            </div>
+            <p>Voici un exemple plus complet</p>
+            <div className="img-article">
+                <img src={Image4}
                     alt="autre exemple de diagramme d'aperçu d'interaction UML" />
             </div>
         </article>

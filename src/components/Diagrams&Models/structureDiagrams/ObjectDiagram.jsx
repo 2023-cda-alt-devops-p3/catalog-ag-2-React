@@ -1,6 +1,8 @@
 import React from 'react'
 import Image from './../../../img/UML-objets-1.png'
 import Image2 from './../../../img/UML-objets-2.png'
+import Image3 from './../../../img/UML-objets-3.png'
+import Image4 from './../../../img/UML-objets-4.png'
 
 
 const ObjectDiagram = () => {
@@ -35,6 +37,12 @@ const ObjectDiagram = () => {
             </div>
             <div className="img-article">
                 <img src={Image2} alt="autre exemple de diagramme d'objets UML" />
+            </div>
+            <div className="img-article">
+                <img src={Image3} alt="autre exemple de diagramme d'objets UML" />
+            </div>
+            <div className="img-article">
+                <img src={Image4} alt="autre exemple de diagramme d'objets UML" />
             </div>
         </article>
     )
