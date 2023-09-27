@@ -31,6 +31,8 @@ import Presentation from './Diagrams&Models/Presentation'
 const Article = ({ selectedButton }) => {
 
   return (
+    <>
+      <div class='spaceArticle' id='textBeginning'></div>
       <section className="section">
         {(() => {
           switch (selectedButton) {
@@ -79,6 +81,7 @@ const Article = ({ selectedButton }) => {
           }
         })()}
       </section>
+    </>
   );
 }
 
