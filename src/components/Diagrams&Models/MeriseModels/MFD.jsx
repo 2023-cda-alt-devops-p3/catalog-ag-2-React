@@ -12,7 +12,7 @@ const MFD = () => {
                 des activités associées (en entrée ou sortie) à ces flux.</p>
             <p>On appelle Diagramme des flux, une modélisation qui représente uniquement les flux échangés, sans
                 chronologie ni description des activités associées (en entrée ou sortie) à ces flux.
-                On retrouvera évidemment ces mêmes flux dans un MCT (puis plus tard dans un MOT) mais cette
+                On retrouvera évidemment ces mêmes flux dans un MCT mais cette
                 fois-ci associés aux opérations qui composent le domaine étudié. Un flux (ou message) entrant
                 dans le système déclenchera une opération; un flux sortant sera produit par une opération.
                 Le diagramme des flux ci-dessous est dit "de contexte" car il montre globalement les principaux

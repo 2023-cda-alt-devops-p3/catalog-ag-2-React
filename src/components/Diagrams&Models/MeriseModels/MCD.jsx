@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from './../../../img/MERISE_MCD-2.png'
+import Image2 from './../../../img/MERISE_MCD-3.png'
 
 const MCD = () => {
     return (
@@ -27,6 +28,10 @@ const MCD = () => {
             <p><i>Exemple de MCD :</i></p>
             <div className="img-article">
                 <img src={Image} alt="exemple de MCD" />
+            </div>
+            <p><i>Autre Exemple de MCD :</i></p>
+            <div className="img-article">
+                <img src={Image2} alt="autre exemple de MCD" />
             </div>
         </article>
     )
