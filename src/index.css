@@ -38,24 +38,18 @@
   padding: 0px 0px;
 }
 
-.navList a {
-  text-decoration: none;
-  color: black;
-}
-
 .page {
   display: flex;
   flex-direction: row;
   min-height: 100%;
   position: relative;
-  padding-bottom: 20px;
 }
 
 .section {
   border: 2px solid green;
   border-radius: 20px;
   margin-left: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 } 
 
 .footer a {
@@ -126,6 +120,7 @@ button {
   border: green solid 2px;
   border-radius: 10px;
   margin: 3px 3px;
+  padding: 3px;
 }
 
 button:hover {
@@ -134,12 +129,53 @@ button:hover {
   color: white;
 }
 
-.footer {
+.displayOff {
+  display: none;
+}
+
+.displayOn {
+  display: block;
+}
+
+ol li {
+  list-style-type: none;
+}
+
+ol {
+  padding-inline-start: 10px !important;
+}
+
+ol button {
+  border: grey solid 2px;
+  border-radius: 10px;
+  margin: 3px 3px;;
+}
+
+ol button:hover {
+  cursor: pointer;
+  background-color: grey;
+  color: white;
+}
+
+.nav div {
+  margin: 10px;
+}
+
+.nav li {
+  margin: 10px 0px;
+}
+
+.img-retour-haut-de-page {
   position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: green;
-  text-align: center;
-  padding: 10px 0px;
+  right: 5px;
+  bottom: -5px;
+  height: 50px;
+  width: auto;
+  border: green solid 2px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.img-retour-haut-de-page:hover {
+  cursor: pointer;
 }
