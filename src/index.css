@@ -3,13 +3,21 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.spaceArticle {
+  margin-bottom: 10px;
+}
+
 .title {
   text-align: center;
   color: green;
-  font-size: large;
+  font-size: x-large;
   font-weight: 900;
   font-style: italic;
   text-decoration: underline;
+}
+
+.header {
+  margin: 30px 0px; 
 }
 
 .subtitle {
@@ -171,7 +179,7 @@ ol button:hover {
   bottom: -5px;
   height: 50px;
   width: auto;
-  border: green solid 2px;
+  border: #88c057 solid 3px;
   border-radius: 50%;
   padding: 5px;
 }
