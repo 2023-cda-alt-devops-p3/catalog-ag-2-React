@@ -2,6 +2,7 @@ import React from 'react'
 import Image from './../../../img/UML-Composants-1.png'
 import Image2 from './../../../img/UML-Composants-2.png'
 import Image3 from './../../../img/UML-Composants-3.png'
+import Image4 from './../../../img/UML-Composants-4.png'
 
 const ComponantDiagram = () => {
     return (
@@ -72,6 +73,9 @@ const ComponantDiagram = () => {
             </div>
             <div className="img-article">
                 <img src={Image3} alt="autre exemple de diagramme de composants UML" />
+            </div>
+            <div className="img-article">
+                <img src={Image4} alt="autre exemple de diagramme de composants UML" />
             </div>
         </article>
     )
