@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 
 const Nav = ({ onButtonClick }) => {
 
+    //le state va permettre d'afficher uniquement la liste de buttons pour le boutton clické
+
     const [openSection, setOpenSection] = useState(null);
 
     function displayOnOff(sectionId) {

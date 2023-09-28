@@ -4,7 +4,7 @@ import Image from './../../img/UML-presentation-1.png'
 const Presentation = () => {
   return (
     <article className="article" id="presentation-UML">
-      <p className="subtitle">Presentation de l'UML et des modèles MERISE</p>
+      <h2 className="subtitle">Presentation de l'UML et des modèles MERISE</h2>
       <p>Le <b>langage de modélisation unifié UML</b> a été développé pour établir un langage de modélisation visuel commun pour <i>l'architecture, la conception et la mise en œuvre</i> de la structure et du comportement des grands systèmes logiciels. UML a des applications en dehors du développement logiciel, comme les processus industriels.</p>
       <p>Il se compose de nombreux types de diagrammes et est similaire aux plans utilisés dans d'autres domaines. Les diagrammes UML, en général, décrivent les limites, la structure et le comportement d'un système, ainsi que les objets qu'il contient.</p>
       <p>La conception et l'analyse orientées objet sont liées à UML. Pour créer des diagrammes, UML prend des éléments et crée des associations entre eux. Voici quelques exemples de diagrammes UML.</p>

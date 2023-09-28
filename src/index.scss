@@ -1,0 +1,169 @@
+$primary-green: #88c057;
+$secondary-orange: #ffa200;
+$thirdy-grey: #3a3c3c;
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+//Pour le Titre
+.title {
+  text-align: center;
+  color: $primary-green;
+  font-size: x-large;
+  font-weight: 900;
+  font-style: italic;
+  text-decoration: underline;
+  margin: 30px 0px;
+}
+
+//conteneur Nav+Article
+.page {
+  display: flex;
+  flex-direction: row;
+  min-height: 100%;
+  position: relative;
+}
+
+//la Nav
+.nav {
+  border: 2px solid $secondary-orange;
+  border-radius: 20px;
+  min-width: fit-content;
+  height: fit-content;
+
+  div {
+    margin: 10px;
+  }
+
+  li {
+    margin: 10px 0px;
+  }
+}
+
+.navList {
+  list-style-type: none;
+  padding: 0px 0px;
+}
+
+//les bouttons de la nav
+button {
+  border: $secondary-orange solid 2px;
+  border-radius: 10px;
+  margin: 3px 3px;
+  padding: 3px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: $secondary-orange;
+  color: white;
+}
+
+//pour les listes nav et articles
+ol {
+  padding-inline-start: 10px !important;
+
+  li {
+    list-style-type: none;
+  }
+
+  button {
+    border: $thirdy-grey solid 2px;
+    border-radius: 10px;
+    margin: 3px 3px;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background-color: $thirdy-grey;
+    color: white;
+  }
+}
+
+//Pour qu'une seule liste soit affichée
+.displayOff {
+  display: none;
+}
+
+.displayOn {
+  display: block;
+}
+
+//Pour les articles
+.spaceArticle {
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: large;
+  color: $primary-green;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.section {
+  border: 2px solid $primary-green;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-bottom: 70px;
+}
+
+.article {
+  margin: 0px 10px;
+  li {
+    font-size: large;
+    font-weight: 100;
+    margin: 10px 0px;
+  }
+}
+
+p {
+  font-size: larger;
+  margin: 5px 5px;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  margin: 10px 0px;
+}
+
+.img-article {
+  display: flex;
+  justify-content: center;
+}
+
+//La media query pour faire basculer l'article sous le menu
+@media (max-width: 800px) {
+  .page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 20px;
+  }
+
+  .section {
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+}
+
+//pour l'icon permettant de revenir en haut de page
+.img-retour-haut-de-page {
+  position: fixed;
+  right: 13px;
+  bottom: -5px;
+  height: 50px;
+  width: auto;
+  border: $primary-green solid 3px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.img-retour-haut-de-page:hover {
+  cursor: pointer;
+}
