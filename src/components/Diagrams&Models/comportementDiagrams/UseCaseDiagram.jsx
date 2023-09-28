@@ -1,4 +1,5 @@
-import React from 'react'
+import React,{ useState } from 'react'
+import Modal from './../../Modal'
 import Image from './../../../img/UML-cas-utilisation-1.png'
 import Image2 from './../../../img/UML-cas-utilisation-2.png'
 import Image3 from './../../../img/UML-cas-utilisation-3.png'
@@ -6,6 +7,20 @@ import Image4 from './../../../img/UML-cas-utilisation-4.png'
 import Image5 from './../../../img/UML-cas-utilisation-5.png'
 
 const UseCaseDiagram = () => {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState('');
+
+    const openModal = (imageUrl) => {
+        setSelectedImage(imageUrl);
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setSelectedImage('');
+        setIsModalOpen(false);
+    };
+
     return (
         <article className="article" id="diagramme-de-cas-d-utilisation-UML">
             <p class="subtitle">Diagramme de cas d'utilisation UML</p>
@@ -41,7 +56,7 @@ const UseCaseDiagram = () => {
                 <li>modéliser le flux de base des événements dans un cas d'utilisation.</li>
             </ol>
             <div className="img-article">
-                <img src={Image} alt="exemple de diagramme de cas d'utilisation UML" />
+                <img src={Image} alt="exemple de diagramme de cas d'utilisation UML" onClick={() => openModal(Image)} />
             </div>
             <p>Pour répondre à la question « Qu'est-ce qu'un diagramme de cas d'utilisation ? », vous devez
                 d'abord comprendre les éléments qui le composent. Ceux-ci incluent généralement :</p>
@@ -59,7 +74,7 @@ const UseCaseDiagram = () => {
             </ol>
             <div className="img-article">
                 <img src={Image2}
-                    alt="autre exemple de diagramme de cas d'utilisation UML" />
+                    alt="autre exemple de diagramme de cas d'utilisation UML" onClick={() => openModal(Image2)}  />
             </div>
             <p>La notation d'un diagramme de cas d'utilisation est assez simple et n'implique pas autant de
                 types de symboles que les autres diagrammes UML.</p>
@@ -86,16 +101,17 @@ const UseCaseDiagram = () => {
             </ol>
             <div className="img-article">
                 <img src={Image3}
-                    alt="autre exemple de diagramme de cas d'utilisation UML" />
+                    alt="autre exemple de diagramme de cas d'utilisation UML" onClick={() => openModal(Image3)} />
             </div>
             <div className="img-article">
                 <img src={Image4}
-                    alt="autre exemple de diagramme de cas d'utilisation UML" />
+                    alt="autre exemple de diagramme de cas d'utilisation UML" onClick={() => openModal(Image4)} />
             </div>
             <div className="img-article">
                 <img src={Image5}
-                    alt="autre exemple de diagramme de cas d'utilisation UML" />
+                    alt="autre exemple de diagramme de cas d'utilisation UML" onClick={() => openModal(Image5)} />
             </div>
+            {isModalOpen && <Modal imageUrl={selectedImage} onClose={closeModal} />}
         </article>
     )
 }
