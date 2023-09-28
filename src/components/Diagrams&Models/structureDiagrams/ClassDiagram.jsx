@@ -4,6 +4,7 @@ import Image from './../../../img/UML-Classes.png'
 import Image2 from './../../../img/UML-Classes-2.png'
 
 const ClassDiagram = () => {
+
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState('');
   
@@ -95,7 +96,6 @@ const ClassDiagram = () => {
             <div className="img-article">
                 <img src={Image2} alt="autre exemple de diagramme de classes UML" onClick={() => openModal(Image2)} />
             </div>
-            {isModalOpen && <Modal imageUrl={selectedImage} onClose={closeModal} />}
             <ol>
                 <li>Shape est une classe abstraite. Il est indiqué en italique.</li>
                 <li>La forme est une super-classe. Cercle, Rectangle et Polygone sont dérivés de Forme. En d'autres termes, un cercle est une forme. Il s'agit d'une relation généralisation/héritage.</li>
@@ -109,6 +109,7 @@ const ClassDiagram = () => {
                 <li>La méthode area() de la classe Circle renvoie une valeur de type double.</li>
                 <li>Les attributs et les noms de méthodes de Rectangle sont masqués. Certaines autres classes du diagramme ont également leurs attributs et leurs noms de méthode masqués.</li>
             </ol>
+            {isModalOpen && <Modal imageUrl={selectedImage} onClose={closeModal} />}
         </article>
     )
 }

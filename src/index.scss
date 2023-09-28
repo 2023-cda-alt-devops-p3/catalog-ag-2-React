@@ -2,6 +2,10 @@ $primary-green: #88c057;
 $secondary-orange: #ffa200;
 $thirdy-grey: #3a3c3c;
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   font-family: 'Roboto', sans-serif;
   background-color: #878d8d;
@@ -129,47 +133,16 @@ p {
 }
 
 img {
-  width: 100%;
-  max-width: 700px;
+  width: 500px;
+  max-width: 100%;
   height: auto;
-  margin: 10px 0px;
+  border-radius: 20px;
+  margin: 20px 0px;
 }
 
 .img-article {
   display: flex;
   justify-content: center;
-}
-
-//La media query pour faire basculer l'article sous le menu
-@media (max-width: 800px) {
-  .page {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    position: relative;
-    padding-bottom: 20px;
-  }
-
-  .section {
-    margin-top: 10px;
-    margin-left: 0px;
-  }
-}
-
-//pour l'icon permettant de revenir en haut de page
-.img-retour-haut-de-page {
-  position: fixed;
-  right: 13px;
-  bottom: -5px;
-  height: 50px;
-  width: auto;
-  border: $primary-green solid 3px;
-  border-radius: 50%;
-  padding: 5px;
-}
-
-.img-retour-haut-de-page:hover {
-  cursor: pointer;
 }
 
 /* Add your modal styles here */
@@ -200,5 +173,72 @@ img {
 
 .modal-content button {
   margin-top: 10px;
+  cursor: pointer;
+}
+
+.btnModal {
+  background-color: white;
+  padding: 5px;
+  border: 2px solid $thirdy-grey;
+  color: $thirdy-grey;
+  font-weight: 700;
+}
+
+.btnModal:hover {
+  background-color: $thirdy-grey;
+}
+
+#backToTop {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+#backToTop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+//La media query pour faire basculer l'article sous le menu
+@media (max-width: 1290px) {
+  .page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 20px;
+  }
+
+  .section {
+    margin-top: 10px;
+    margin-left: 0px;
+  }  
+}
+
+@media (max-width: 991px) {
+  img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 576px) {
+  img {
+    width: 100%;
+  }
+}
+
+//pour l'icon permettant de revenir en haut de page
+.img-retour-haut-de-page {
+  position: fixed;
+  right: 13px;
+  bottom: 5px;
+  height: 50px;
+  width: auto;
+  border: $primary-green solid 3px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.img-retour-haut-de-page:hover {
   cursor: pointer;
 }

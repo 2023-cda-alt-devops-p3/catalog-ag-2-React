@@ -1,8 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Modal from './../../Modal'
 import Image from './../../../img/UML-paquetages-1.png'
 import Image2 from './../../../img/UML-paquetages-2.png'
 
 const PackagingDiagram = () => {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState('');
+
+    const openModal = (imageUrl) => {
+        setSelectedImage(imageUrl);
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setSelectedImage('');
+        setIsModalOpen(false);
+    };
+
     return (
         <article className="article" id="diagramme-de-paquetages-UML">
             <p className="subtitle">Diagramme de paquetages UML</p>
@@ -14,8 +29,8 @@ const PackagingDiagram = () => {
                 et organisés de manière hiérarchique. Les diagrammes de paquetages sont le plus souvent utilisés
                 pour donner un aperçu visuel de l'architecture en couches d'un classifieur UML, tel qu'un
                 système logiciel.</p>
-            <div class="img-article">
-                <img src={Image} alt="exemple de diagramme de paquetages UML" />
+            <div className="img-article">
+                <img src={Image} alt="exemple de diagramme de paquetages UML" onClick={() => openModal(Image)} />
             </div>
             <p>Un diagramme de package bien conçu offre de nombreux avantages aux personnes souhaitant créer une
                 représentation graphique de leur système ou projet UML.</p>
@@ -66,9 +81,10 @@ const PackagingDiagram = () => {
                     d'un autre. En d'autres termes, le contenu de deux paquetages fusionne pour former un
                     nouveau paquetage.</li>
             </ol>
-            <div class="img-article">
-                <img src={Image2} alt="autre exemple de diagramme de paquetages UML" />
+            <div className="img-article">
+                <img src={Image2} alt="autre exemple de diagramme de paquetages UML" onClick={() => openModal(Image2)} />
             </div>
+            {isModalOpen && <Modal imageUrl={selectedImage} onClose={closeModal} />}
         </article>
 
     )
