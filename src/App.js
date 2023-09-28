@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './App.css';
 import Title from './components/Title'
 import Nav from './components/Nav'
 import Article from './components/Article';
@@ -15,13 +14,11 @@ function App() {
 
   return (
     <main>
-      <div className="App">
         <Title />
         <div className="page">
           <Nav onButtonClick={handleButtonClick} />
           <Article selectedButton={selectedButton} />
         </div>
-      </div>
       <Footer />
     </main>
   );
