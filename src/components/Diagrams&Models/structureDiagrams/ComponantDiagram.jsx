@@ -1,9 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Modal from './../../Modal'
 import Image from './../../../img/UML-Composants-1.png'
 import Image2 from './../../../img/UML-Composants-2.png'
 import Image3 from './../../../img/UML-Composants-3.png'
+import Image4 from './../../../img/UML-Composants-4.png'
 
 const ComponantDiagram = () => {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState('');
+
+    const openModal = (imageUrl) => {
+        setSelectedImage(imageUrl);
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setSelectedImage('');
+        setIsModalOpen(false);
+    };
+
     return (
         <article className="article" id="diagramme-de-composants-UML">
             <p className="subtitle">Diagramme de composants UML</p>
@@ -65,14 +81,18 @@ const ComponantDiagram = () => {
                     composant (ou élément) à un autre.</li>
             </ol>
             <div className="img-article">
-                <img src={Image} alt="exemple de diagramme de composants UML" />
+                <img src={Image} alt="exemple de diagramme de composants UML" onClick={() => openModal(Image)} />
             </div>
             <div className="img-article">
-                <img src={Image2} alt="autre exemple de diagramme de composants UML" />
+                <img src={Image2} alt="autre exemple de diagramme de composants UML" onClick={() => openModal(Image2)} />
             </div>
             <div className="img-article">
-                <img src={Image3} alt="autre exemple de diagramme de composants UML" />
+                <img src={Image3} alt="autre exemple de diagramme de composants UML" onClick={() => openModal(Image3)} />
             </div>
+            <div className="img-article">
+                <img src={Image4} alt="autre exemple de diagramme de composants UML" onClick={() => openModal(Image4)} />
+            </div>
+            {isModalOpen && <Modal imageUrl={selectedImage} onClose={closeModal} />}
         </article>
     )
 }

@@ -1,8 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Modal from './../../Modal'
 import Image from './../../../img/UML-Composite-1.png'
 import Image2 from './../../../img/UML-Composite-2.png'
 
 const CompositeStructureDiagram = () => {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState('');
+
+    const openModal = (imageUrl) => {
+        setSelectedImage(imageUrl);
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setSelectedImage('');
+        setIsModalOpen(false);
+    };
+
     return (
         <article className="article" id="diagramme-de-structures-composites-UML">
             <p className="subtitle">Diagramme de structures composites UML</p>
@@ -11,7 +26,7 @@ const CompositeStructureDiagram = () => {
                 un classifieur structuré donné, en définissant ses classes de configuration, ses interfaces, ses
                 packages et les liens qui les unissent dans le détail.</p>
             <div className="img-article">
-                <img src={Image} alt="exemple de diagramme de structures composites UML" />
+                <img src={Image} alt="exemple de diagramme de structures composites UML" onClick={() => openModal(Image)} />
             </div>
             <p>Un diagramme de structure composite permet aux utilisateurs de déterminer précisément ce qui est
                 contenu dans un objet, en spécifiant la manière dont différentes propriétés interagissent pour
@@ -57,8 +72,9 @@ const CompositeStructureDiagram = () => {
             </p>
             <div className="img-article">
                 <img src={Image2}
-                    alt="autre exemple de diagramme de structures composites UML" />
+                    alt="autre exemple de diagramme de structures composites UML" onClick={() => openModal(Image2)} />
             </div>
+            {isModalOpen && <Modal imageUrl={selectedImage} onClose={closeModal} />}
         </article>
     )
 }

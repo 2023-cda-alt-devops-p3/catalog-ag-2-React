@@ -32,7 +32,7 @@ const Article = ({ selectedButton }) => {
 
   return (
     <>
-      <div class='spaceArticle' id='textBeginning'></div>
+      <div className='spaceArticle' id='textBeginning'></div>
       <section className="section">
         {(() => {
           switch (selectedButton) {

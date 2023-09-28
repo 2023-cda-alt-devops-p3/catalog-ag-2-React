@@ -1,9 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Modal from './../../Modal'
 import Image from './../../../img/UML-deploiement-1.png'
 import Image2 from './../../../img/UML-deploiement-2.png'
 import Image3 from './../../../img/UML-deploiement-3.png'
+import Image4 from './../../../img/UML-deploiement-4.png'
 
 const DeploymentDiagram = () => {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState('');
+
+    const openModal = (imageUrl) => {
+        setSelectedImage(imageUrl);
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setSelectedImage('');
+        setIsModalOpen(false);
+    };
+
     return (
         <article className="article" id="diagramme-de-deploiement-UML">
             <p className="subtitle">Diagramme de deploiement UML</p>
@@ -44,14 +60,18 @@ const DeploymentDiagram = () => {
                     dont le nom est entouré de flèches doubles.</li>
             </ol>
             <div className="img-article">
-                <img src={Image} alt="exemple de diagramme de deploiement UML" />
+                <img src={Image} alt="exemple de diagramme de deploiement UML" onClick={() => openModal(Image)} />
             </div>
             <div className="img-article">
-                <img src={Image2} alt="autre exemple de diagramme de deploiement UML" />
+                <img src={Image2} alt="autre exemple de diagramme de deploiement UML" onClick={() => openModal(Image2)} />
             </div>
             <div className="img-article">
-                <img src={Image3} alt="autre exemple de diagramme de deploiement UML" />
+                <img src={Image3} alt="autre exemple de diagramme de deploiement UML" onClick={() => openModal(Image3)} />
             </div>
+            <div className="img-article">
+                <img src={Image4} alt="autre exemple de diagramme de deploiement UML" onClick={() => openModal(Image4)} />
+            </div>
+            {isModalOpen && <Modal imageUrl={selectedImage} onClose={closeModal} />}
         </article>
     )
 }

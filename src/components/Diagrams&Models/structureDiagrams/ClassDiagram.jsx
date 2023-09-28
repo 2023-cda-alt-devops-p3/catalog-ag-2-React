@@ -1,8 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Modal from './../../Modal'
 import Image from './../../../img/UML-Classes.png'
 import Image2 from './../../../img/UML-Classes-2.png'
 
 const ClassDiagram = () => {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState('');
+  
+    const openModal = (imageUrl) => {
+      setSelectedImage(imageUrl);
+      setIsModalOpen(true);
+    };
+  
+    const closeModal = () => {
+      setSelectedImage('');
+      setIsModalOpen(false);
+    };
+
     return (
         <article className="article" id="diagramme-de-classes-UML">
             <p className="subtitle">Diagramme de classes UML</p>
@@ -75,11 +90,11 @@ const ClassDiagram = () => {
                 tels que des documents, des bases de données, des fichiers exécutables, des composants
                 logiciels, etc.</li>
             <div className="img-article">
-                <img src={Image} alt="exemple de diagramme de classes UML" />
+                <img src={Image} alt="diagramme de classes UML" onClick={() => openModal(Image)} />
             </div>
             <p>Exemple détaillé d'un diagramme de classes</p>
             <div className="img-article">
-                <img src={Image2} alt="autre exemple de diagramme de classes UML" />
+                <img src={Image2} alt="autre exemple de diagramme de classes UML" onClick={() => openModal(Image2)} />
             </div>
             <ol>
                 <li>Shape est une classe abstraite. Il est indiqué en italique.</li>
@@ -94,6 +109,7 @@ const ClassDiagram = () => {
                 <li>La méthode area() de la classe Circle renvoie une valeur de type double.</li>
                 <li>Les attributs et les noms de méthodes de Rectangle sont masqués. Certaines autres classes du diagramme ont également leurs attributs et leurs noms de méthode masqués.</li>
             </ol>
+            {isModalOpen && <Modal imageUrl={selectedImage} onClose={closeModal} />}
         </article>
     )
 }
