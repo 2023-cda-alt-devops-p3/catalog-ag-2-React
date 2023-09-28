@@ -1,8 +1,23 @@
-import React from 'react'
+import React, {useState } from 'react'
+import Modal from './../../Modal'
 import Image from './../../../img/UML-activite-1.png'
 import Image2 from './../../../img/UML-activite-2.png'
 
 const ActivityDiagram = () => {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState('');
+
+    const openModal = (imageUrl) => {
+        setSelectedImage(imageUrl);
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setSelectedImage('');
+        setIsModalOpen(false);
+    };
+
     return (
         <article className="article" id="diagramme-activite-UML">
             <p className="subtitle">Diagramme d'activité UML</p>
@@ -38,11 +53,12 @@ const ActivityDiagram = () => {
                     cercle noir avec un contour.</li>
             </ol>
             <div className="img-article">
-                <img src={Image} alt="exemple de diagramme d'activité UML" />
+                <img src={Image} alt="exemple de diagramme d'activité UML" onClick={() => openModal(Image)} />
             </div>
             <div className="img-article">
-                <img src={Image2} alt="autre exemple de diagramme d'activité UML" />
+                <img src={Image2} alt="autre exemple de diagramme d'activité UML" onClick={() => openModal(Image2)} />
             </div>
+            {isModalOpen && <Modal imageUrl={selectedImage} onClose={closeModal} />}
         </article>
     )
 }

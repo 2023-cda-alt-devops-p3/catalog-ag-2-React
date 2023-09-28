@@ -1,8 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Modal from './../../Modal'
 import Image from './../../../img/UML-sequence-1.png'
 import Image2 from './../../../img/UML-sequence-2.png'
 
 const SequenceDiagram = () => {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState('');
+
+    const openModal = (imageUrl) => {
+        setSelectedImage(imageUrl);
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setSelectedImage('');
+        setIsModalOpen(false);
+    };
+
     return (
         <article class="article" id="diagramme-de-sequence-UML">
             <p class="subtitle">Diagramme de sequence UML</p>
@@ -32,11 +47,12 @@ const SequenceDiagram = () => {
                 </li>
             </ol>
             <div className="img-article">
-                <img src={Image} alt="exemple de diagramme de séquence UML" />
+                <img src={Image} alt="exemple de diagramme de séquence UML" onClick={() => openModal(Image)} />
             </div>
             <div className="img-article">
-                <img src={Image2} alt="autre exemple de diagramme de séquence UML" />
+                <img src={Image2} alt="autre exemple de diagramme de séquence UML" onClick={() => openModal(Image2)} />
             </div>
+            {isModalOpen && <Modal imageUrl={selectedImage} onClose={closeModal} />}
         </article>
 
     )

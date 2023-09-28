@@ -1,8 +1,23 @@
-import React from 'react'
+import React,{ useState } from 'react'
+import Modal from './../../Modal'
 import Image from './../../../img/UML-communication-1.png'
 import Image2 from './../../../img/UML-communication-2.png'
 
 const CommunicationDiagram = () => {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState('');
+
+    const openModal = (imageUrl) => {
+        setSelectedImage(imageUrl);
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setSelectedImage('');
+        setIsModalOpen(false);
+    };
+
     return (
         <article className="article" id="diagramme-de-communication-UML">
             <p className="subtitle">Diagramme de communication UML</p>
@@ -46,13 +61,14 @@ const CommunicationDiagram = () => {
             </ol>
             <div className="img-article">
                 <img src={Image}
-                    alt="exemple de diagramme de communication UML" />
+                    alt="exemple de diagramme de communication UML" onClick={() => openModal(Image)} />
             </div>
             <p>exemple du passage d'un diagramme de séquence à un diagramme de communication</p>
             <div className="img-article">
                 <img src={Image2}
-                    alt="exemple du passage d'un diagramme de séquence à un diagramme de communication UML" />
+                    alt="exemple du passage d'un diagramme de séquence à un diagramme de communication UML" onClick={() => openModal(Image2)} />
             </div>
+            {isModalOpen && <Modal imageUrl={selectedImage} onClose={closeModal} />}
         </article>
 
     )

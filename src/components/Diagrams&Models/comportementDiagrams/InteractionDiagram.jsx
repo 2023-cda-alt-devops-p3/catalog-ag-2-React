@@ -1,10 +1,25 @@
-import React from 'react'
+import React,{ useState } from 'react'
+import Modal from './../../Modal'
 import Image from './../../../img/UML-apercu-interaction-1.png'
 import Image2 from './../../../img/UML-apercu-interaction-2.png'
 import Image3 from './../../../img/UML-apercu-interaction-3.png'
 import Image4 from './../../../img/UML-apercu-interaction-4.png'
 
 const InteractionDiagram = () => {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState('');
+
+    const openModal = (imageUrl) => {
+        setSelectedImage(imageUrl);
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setSelectedImage('');
+        setIsModalOpen(false);
+    };
+
     return (
         <article className="article" id="diagramme-d-aperçu-d-interaction-UML">
             <p className="subtitle">Diagramme d'aperçu d'interaction UML</p>
@@ -21,14 +36,14 @@ const InteractionDiagram = () => {
             </p>
             <div className="img-article">
                 <img src={Image}
-                    alt="exemple de diagramme d'aperçu d'interaction UML" />
+                    alt="exemple de diagramme d'aperçu d'interaction UML" onClick={() => openModal(Image)} />
             </div>
             <p>Éléments d'interaction sont semblables aux occurrences d'interaction. Donc, ils affichent une
                 représentation de diagrammes d'interaction existants dans un cadre rectangulaire. Ils sont
                 différents en ce qu'ils affichent le contenu de la ligne des références du diagramme.</p>
             <div className="img-article">
                 <img src={Image2}
-                    alt="autre exemple de diagramme d'aperçu d'interaction UML" />
+                    alt="autre exemple de diagramme d'aperçu d'interaction UML" onClick={() => openModal(Image2)} />
             </div>
             <p>Tous les mêmes contrôles de diagrammes d'activité (fourche, joindre, fusionner, etc.) peut être
                 utilisé sur des diagrammes de vue d'ensemble d'interaction pour mettre la logique de contrôle
@@ -37,13 +52,14 @@ const InteractionDiagram = () => {
             </p>
             <div className="img-article">
                 <img src={Image3}
-                    alt="autre exemple de diagramme d'aperçu d'interaction UML" />
+                    alt="autre exemple de diagramme d'aperçu d'interaction UML" onClick={() => openModal(Image3)} />
             </div>
             <p>Voici un exemple plus complet</p>
             <div className="img-article">
                 <img src={Image4}
-                    alt="autre exemple de diagramme d'aperçu d'interaction UML" />
+                    alt="autre exemple de diagramme d'aperçu d'interaction UML" onClick={() => openModal(Image4)} />
             </div>
+            {isModalOpen && <Modal imageUrl={selectedImage} onClose={closeModal} />}
         </article>
     )
 }
