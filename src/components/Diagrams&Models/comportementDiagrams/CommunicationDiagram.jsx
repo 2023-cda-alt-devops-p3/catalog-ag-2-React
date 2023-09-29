@@ -52,7 +52,7 @@ const CommunicationDiagram = () => {
                     de vie représentent les objets entrant dans une interaction. Dans un scénario d'une banque,
                     par exemple, les lignes de vie peuvent représenter des objets comme le système bancaire ou
                     un client. Chaque instance d'une interaction est représentée par une ligne de vie.</li>
-                <li>ans les diagrammes de communication, le chemin d'un message est un connecteur entre les
+                <li>Dans les diagrammes de communication, le chemin d'un message est un connecteur entre les
                     rôles ou objets représentés par les ligne de vie dans le diagramme. Le chemin identifie les
                     objets qui peuvent transmettre des messages dans l'interaction.</li>
                 <li>Un message est un élément de diagramme Unified Modeling Language (UML) qui définit un type

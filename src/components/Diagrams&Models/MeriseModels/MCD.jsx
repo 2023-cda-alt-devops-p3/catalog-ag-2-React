@@ -1,9 +1,24 @@
-import React from 'react'
+import React, { useState} from 'react'
 import Image from './../../../img/MERISE_MCD-2.png'
 import Image2 from './../../../img/MERISE_MCD-3.png'
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import Modal from './../../Modal'
 
 const MCD = () => {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState('');
+
+    const openModal = (imageUrl) => {
+        setSelectedImage(imageUrl);
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setSelectedImage('');
+        setIsModalOpen(false);
+    };
+
     return (
         <article className="article" id="modele-conceptuel-des-donnees-MERISE">
             <p className="subtitle">Modèle Conceptuel des Données MERISE</p>
@@ -28,12 +43,13 @@ const MCD = () => {
             </ol>
             <p><i>Exemple de MCD :</i></p>
             <div className="img-article">
-                <LazyLoadImage src={Image} alt="exemple de MCD" />
+                <LazyLoadImage src={Image} alt="exemple de MCD" onClick={() => openModal(Image)} />
             </div>
             <p><i>Autre Exemple de MCD :</i></p>
             <div className="img-article">
-                <LazyLoadImage src={Image2} alt="autre exemple de MCD" />
+                <LazyLoadImage src={Image2} alt="autre exemple de MCD" onClick={() => openModal(Image2)} />
             </div>
+            {isModalOpen && <Modal imageUrl={selectedImage} onClose={closeModal} />}
         </article>
     )
 }
