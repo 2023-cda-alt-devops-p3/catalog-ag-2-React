@@ -22,8 +22,8 @@ const CompositeStructureDiagram = () => {
     return (
         <article className="article" id="diagramme-de-structures-composites-UML">
             <p className="subtitle">Diagramme de structures composites UML</p>
-            <p>Un diagramme de structure composite est un diagramme structurel UML qui fournit une vue
-                d'ensemble logique de l'ensemble ou d'une partie d'un système logiciel. Il permet de visualiser
+            <p>Un diagramme de structure composite est un diagramme structurel UML qui fournit une <b>vue
+                d'ensemble logique de l'ensemble ou d'une partie d'un système logiciel</b>. Il permet de visualiser
                 un classifieur structuré donné, en définissant ses classes de configuration, ses interfaces, ses
                 packages et les liens qui les unissent dans le détail.</p>
             <div className="img-article">
@@ -37,26 +37,26 @@ const CompositeStructureDiagram = () => {
                 dont les informations sont communiquées, etc.</p>
             <p>Un diagramme de structure composite offre également les avantages suivants :</p>
             <ol>
-                <li>Il aide les utilisateurs à comprendre l'état actuel de leur système.</li>
-                <li>Il décompose la structure interne de plusieurs classes, interfaces ou composants, et leurs
+                <li>- Il aide les utilisateurs à comprendre l'état actuel de leur système.</li>
+                <li>- Il décompose la structure interne de plusieurs classes, interfaces ou composants, et leurs
                     interactions.</li>
-                <li>Il détaille les architectures d'exécution et les modèles d'utilisation que les diagrammes
+                <li>- Il détaille les architectures d'exécution et les modèles d'utilisation que les diagrammes
                     statiques ne peuvent pas représenter.</li>
-                <li>Il fournit aux utilisateurs des informations pour optimiser et dépanner leur système.
+                <li>- Il fournit aux utilisateurs des informations pour optimiser et dépanner leur système.
                 </li>
             </ol>
-            <p>Composants de base des diagrammes de structures composites UML</p>
+            <p>Composants de base des diagrammes de structures composites UML :</p>
             <ol>
-                <li>Terminator : Indique les points de départ et de fin</li>
-                <li>Nœud (circulaire) : Indique les événements ou les jalons et contient des chiffres</li>
-                <li>Nœud (rectangulaire) : Indique les événements ou les jalons et contient des chiffres</li>
-                <li>Acteur : Interagit avec le système depuis l'extérieur (p. ex. une personne, un équipement,
+                <li>- Terminator : Indique les points de départ et de fin</li>
+                <li>- Nœud (circulaire) : Indique les événements ou les jalons et contient des chiffres</li>
+                <li>- Nœud (rectangulaire) : Indique les événements ou les jalons et contient des chiffres</li>
+                <li>- Acteur : Interagit avec le système depuis l'extérieur (p. ex. une personne, un équipement,
                     etc.)</li>
-                <li>Classe : Regroupe les objets ayant des propriétés ou des comportements communs (p. ex. des
+                <li>- Classe : Regroupe les objets ayant des propriétés ou des comportements communs (p. ex. des
                     opérations, des paramètres, des attributs, etc.)</li>
-                <li>Partie : Agit comme une instance d'exécution des classes ou des interfaces</li>
-                <li>Port : Définit le comportement que l'exécutant accepte de respecter</li>
-                <li>Raccord : Représente les liens de communication entre les parties</li>
+                <li>- Partie : Agit comme une instance d'exécution des classes ou des interfaces</li>
+                <li>- Port : Définit le comportement que l'exécutant accepte de respecter</li>
+                <li>- Raccord : Représente les liens de communication entre les parties</li>
             </ol>
             <p>En tant que diagrammes UML, les diagrammes de structure composite et les diagrammes de classes
                 sont utilisés pour visualiser et organiser les acteurs, les interactions et les artefacts au

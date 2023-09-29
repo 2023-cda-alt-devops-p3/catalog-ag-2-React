@@ -1,5 +1,6 @@
-import React, { useState} from 'react'
+import React, { useState } from 'react'
 import Image from './../../../img/MERISE_MLD-1.png'
+import Image2 from './../../../img/MERISE_MLD-2.png'
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Modal from './../../Modal'
 
@@ -31,7 +32,10 @@ const MLD = () => {
             <p>Les modèles logiques de données relationnels sont réalisés à partir du méta modèle de classes du
                 langage de modélisation unifié, UML en abrégé. La lecture des cardinalités UML est l'inverse de
                 la lecture Merise.</p>
-                {isModalOpen && <Modal imageUrl={selectedImage} onClose={closeModal} />}
+            <div className="img-article">
+                <LazyLoadImage src={Image2} alt="exemple de MLD" onClick={() => openModal(Image2)} />
+            </div>
+            {isModalOpen && <Modal imageUrl={selectedImage} onClose={closeModal} />}
         </article>
     )
 }

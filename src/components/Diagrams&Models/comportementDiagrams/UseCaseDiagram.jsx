@@ -25,17 +25,17 @@ const UseCaseDiagram = () => {
     return (
         <article className="article" id="diagramme-de-cas-d-utilisation-UML">
             <p class="subtitle">Diagramme de cas d'utilisation UML</p>
-            <p>En langage de modélisation unifié (UML), un diagramme de cas d'utilisation peut servir à résumer
+            <p>En langage de modélisation unifié (UML), un diagramme de cas d'utilisation peut servir à <b>résumer
                 les informations des utilisateurs de votre système (également appelés acteurs) et leurs
-                interactions avec ce dernier. La création de ce type de diagramme UML requiert un ensemble de
+                interactions avec ce dernier</b>. La création de ce type de diagramme UML requiert un ensemble de
                 symboles et de connecteurs spécifiques. Lorsqu'ils sont bien conçus, les diagrammes de cas
                 d'utilisation peuvent aider votre équipe à collaborer et représenter :</p>
             <ol>
-                <li>les scénarios dans lesquels votre système ou application interagit avec des personnes, des
+                <li>- les scénarios dans lesquels votre système ou application interagit avec des personnes, des
                     organisations ou des systèmes externes ;</li>
-                <li>les objectifs que votre système ou application permet aux entités (appelées acteurs)
+                <li>- les objectifs que votre système ou application permet aux entités (appelées acteurs)
                     d'atteindre ;</li>
-                <li>la portée de votre système.</li>
+                <li>- la portée de votre système.</li>
             </ol>
             <p>Un diagramme de cas d'utilisation n'a pas vocation à entrer dans les détails. Par exemple, ne
                 vous attendez pas à ce qu'il illustre l'ordre dans lequel les étapes sont exécutées. Au
@@ -51,10 +51,10 @@ const UseCaseDiagram = () => {
             </p>
             <p>Les diagrammes de cas d'utilisation UML sont parfaits pour :</p>
             <ol>
-                <li>représenter les objectifs des interactions entre le système et les utilisateurs ;</li>
-                <li>définir et organiser les exigences fonctionnelles dans un système ;</li>
-                <li>préciser le contexte et les exigences d'un système ;</li>
-                <li>modéliser le flux de base des événements dans un cas d'utilisation.</li>
+                <li>- représenter les objectifs des interactions entre le système et les utilisateurs ;</li>
+                <li>- définir et organiser les exigences fonctionnelles dans un système ;</li>
+                <li>- préciser le contexte et les exigences d'un système ;</li>
+                <li>- modéliser le flux de base des événements dans un cas d'utilisation.</li>
             </ol>
             <div className="img-article">
                 <LazyLoadImage src={Image} alt="exemple de diagramme de cas d'utilisation UML" onClick={() => openModal(Image)} />
@@ -62,14 +62,14 @@ const UseCaseDiagram = () => {
             <p>Pour répondre à la question « Qu'est-ce qu'un diagramme de cas d'utilisation ? », vous devez
                 d'abord comprendre les éléments qui le composent. Ceux-ci incluent généralement :</p>
             <ol>
-                <li>Les acteurs : utilisateurs qui interagissent avec un système. Un acteur peut être une
+                <li>- <i>Les acteurs</i> : utilisateurs qui interagissent avec un système. Un acteur peut être une
                     personne, une organisation ou un système externe qui interagit avec votre application ou
                     votre système. Il s'agit nécessairement d'objets externes qui produisent ou consomment
                     des
                     données.</li>
-                <li>Le système : séquence spécifique d'actions et d'interactions entre les acteurs et le
+                <li>- <i>Le système</i> : séquence spécifique d'actions et d'interactions entre les acteurs et le
                     système. Un système peut également être appelé scénario.</li>
-                <li>Les objectifs : résultat final de la plupart des cas d'utilisation. Un diagramme réussi
+                <li>- <i>Les objectifs</i> : résultat final de la plupart des cas d'utilisation. Un diagramme réussi
                     doit
                     décrire les activités et les variantes utilisées pour atteindre l'objectif.</li>
             </ol>
@@ -80,22 +80,22 @@ const UseCaseDiagram = () => {
             <p>La notation d'un diagramme de cas d'utilisation est assez simple et n'implique pas autant de
                 types de symboles que les autres diagrammes UML.</p>
             <ol>
-                <li>Cas d'utilisation : formes ovales horizontales qui représentent les différentes
+                <li>- <i>Cas d'utilisation</i> : formes ovales horizontales qui représentent les différentes
                     applications
                     possibles pour un utilisateur.</li>
-                <li>Acteurs : bonshommes représentant les personnes qui se servent réellement des cas
+                <li>- <i>Acteurs</i> : bonshommes représentant les personnes qui se servent réellement des cas
                     d'utilisation.</li>
-                <li>Associations : lignes reliant les acteurs aux cas d'utilisation. Dans les diagrammes
+                <li>- <i>Associations</i> : lignes reliant les acteurs aux cas d'utilisation. Dans les diagrammes
                     complexes, il est important de pouvoir identifier les acteurs associés à chaque cas
                     d'utilisation</li>
-                <li>Frontières de systèmes : cadres indiquant le champ d'application des cas d'utilisation
+                <li>- <i>Frontières de systèmes</i> : cadres indiquant le champ d'application des cas d'utilisation
                     présents dans un système. Tous les cas d'utilisation situés en dehors du cadre n'entrent
                     pas
                     dans le champ d'application de ce système. Par exemple, tueur psychopathe (Psycho Killer
                     en
                     anglais) est en dehors du champ d'application des professions dans l'exemple de la
                     tronçonneuse ci-dessous.</li>
-                <li>Paquets : une forme UML qui vous permet de regrouper différents éléments. Tout comme
+                <li>- <i>Paquets</i> : une forme UML qui vous permet de regrouper différents éléments. Tout comme
                     pour
                     les diagrammes de composants, ces groupes sont représentés sous forme de dossiers de
                     fichiers.</li>

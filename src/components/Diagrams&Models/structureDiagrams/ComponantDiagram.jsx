@@ -24,8 +24,8 @@ const ComponantDiagram = () => {
     return (
         <article className="article" id="diagramme-de-composants-UML">
             <p className="subtitle">Diagramme de composants UML</p>
-            <p>Un diagramme de composants a pour objectif d'illustrer la relation entre les différents
-                composants d'un système. Dans le cadre de l'UML 2.0, le terme « composant » fait référence à un
+            <p>Un diagramme de composants a pour objectif d'<b>illustrer la relation entre les différents
+                composants</b> d'un système. Dans le cadre de l'UML 2.0, le terme « composant » fait référence à un
                 module de classes qui représentent des systèmes ou des sous-systèmes indépendants ayant la
                 capacité de s'interfacer avec le reste du système.</p>
             <p>Il existe une approche de développement entièrement articulée autour des composants: la
@@ -40,9 +40,9 @@ const ComponantDiagram = () => {
                 valeur inestimable pour la conception de votre système. Ils peuvent en effet aider votre équipe
                 à :</p>
             <ol>
-                <li>imaginer la structure physique du système ;</li>
-                <li>faire ressortir les composants du système et à leurs relations ;</li>
-                <li>mettre en évidence le comportement de chaque service vis-à-vis de l'interface.</li>
+                <li>- imaginer la structure physique du système ;</li>
+                <li>- faire ressortir les composants du système et à leurs relations ;</li>
+                <li>- mettre en évidence le comportement de chaque service vis-à-vis de l'interface.</li>
             </ol>
             <p>Un diagramme de composants UML vous permet d'obtenir une vue d'ensemble de votre système
                 logiciel. Comprendre le comportement précis du service fourni par chaque élément de votre
@@ -59,25 +59,25 @@ const ComponantDiagram = () => {
                 appropriés. Voici les différents types de formes qu'il vous faut connaître lorsque vous
                 consultez ou souhaitez réaliser des diagrammes de composants :</p>
             <ol>
-                <li>Symbole de composant : Entité tenue d'exécuter une fonction stéréotypée. Un composant
+                <li>- Symbole de composant : Entité tenue d'exécuter une fonction stéréotypée. Un composant
                     fournit et consomme un comportement par le biais d'interfaces, ainsi que par le biais
                     d'autres composants. Considérez les composants comme un type de classe. En UML 1.0, un
                     composant est modélisé sous forme de bloc rectangulaire avec deux rectangles plus petits qui
                     dépassent sur le côté. En UML 2.0, un composant est modélisé sous forme de bloc
                     rectangulaire avec une petite image de l'ancienne forme UML 1.0.</li>
-                <li>Symbole de nœud : Représente des objets matériels ou logiciels situés à un niveau supérieur
+                <li>- Symbole de nœud : Représente des objets matériels ou logiciels situés à un niveau supérieur
                     aux composants.</li>
-                <li>Symbole d'interface : Indique les entrées ou les données qu'un composant reçoit ou fournit.
+                <li>- Symbole d'interface : Indique les entrées ou les données qu'un composant reçoit ou fournit.
                     Les interfaces peuvent être représentées par des notes textuelles ou des symboles, tels que
                     des formes de sucette, de douille ouverte et d'articulation.</li>
-                <li>Symbole de port : Spécifie un point d'interaction distinct entre un composant et son
+                <li>- Symbole de port : Spécifie un point d'interaction distinct entre un composant et son
                     environnement. Les ports sont symbolisés par un petit carré.</li>
-                <li>Symbole de paquetage : Regroupe plusieurs éléments du système et est représenté par des
+                <li>- Symbole de paquetage : Regroupe plusieurs éléments du système et est représenté par des
                     dossiers de fichiers. Tout comme les dossiers de fichiers regroupent
                     plusieurs feuilles, les packages peuvent englober plusieurs éléments.</li>
-                <li>Remarque : Permet aux développeurs d'ajouter une méta-analyse sur le diagramme de
+                <li>- Remarque : Permet aux développeurs d'ajouter une méta-analyse sur le diagramme de
                     composants.</li>
-                <li>Symbole de dépendance : Indique les relations de dépendance entre les différentes parties de
+                <li>- Symbole de dépendance : Indique les relations de dépendance entre les différentes parties de
                     votre système. Les dépendances sont représentées par des lignes pointillées reliant un
                     composant (ou élément) à un autre.</li>
             </ol>
