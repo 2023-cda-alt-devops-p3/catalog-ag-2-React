@@ -3,6 +3,7 @@ import Modal from './../../Modal'
 import Image from './../../../img/UML-etats-transitions-1.png'
 import Image2 from './../../../img/UML-etats-transitions-2.png'
 import Image3 from './../../../img/UML-etats-transitions-3.png'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const StateTransitionDiagram = () => {
 
@@ -51,14 +52,14 @@ const StateTransitionDiagram = () => {
                     d'automates.</li>
             </ol>
             <div className="img-article">
-                <img src={Image} alt="exemple de diagramme d'états-transitions UML" onClick={() => openModal(Image)} />
+                <LazyLoadImage src={Image} alt="exemple de diagramme d'états-transitions UML" onClick={() => openModal(Image)} />
             </div>
             <div className="img-article">
-                <img src={Image2}
+                <LazyLoadImage src={Image2}
                     alt="autre exemple de diagramme d'états-transitions UML" onClick={() => openModal(Image2)} />
             </div>
             <div className="img-article">
-                <img src={Image3}
+                <LazyLoadImage src={Image3}
                     alt="autre exemple de diagramme d'états-transitions UML" onClick={() => openModal(Image3)} />
             </div>
             {isModalOpen && <Modal imageUrl={selectedImage} onClose={closeModal} />}

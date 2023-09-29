@@ -2,6 +2,7 @@ import React,{ useState } from 'react'
 import Modal from './../../Modal'
 import Image from './../../../img/UML-communication-1.png'
 import Image2 from './../../../img/UML-communication-2.png'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const CommunicationDiagram = () => {
 
@@ -60,12 +61,12 @@ const CommunicationDiagram = () => {
                     instance au cours d'une interaction.</li>
             </ol>
             <div className="img-article">
-                <img src={Image}
+                <LazyLoadImage src={Image}
                     alt="exemple de diagramme de communication UML" onClick={() => openModal(Image)} />
             </div>
             <p>exemple du passage d'un diagramme de séquence à un diagramme de communication</p>
             <div className="img-article">
-                <img src={Image2}
+                <LazyLoadImage src={Image2}
                     alt="exemple du passage d'un diagramme de séquence à un diagramme de communication UML" onClick={() => openModal(Image2)} />
             </div>
             {isModalOpen && <Modal imageUrl={selectedImage} onClose={closeModal} />}

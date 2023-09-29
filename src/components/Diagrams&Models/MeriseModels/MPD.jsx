@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from './../../../img/MERISE_MPD-1.png'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const MPD = () => {
     return (
@@ -8,7 +9,7 @@ const MPD = () => {
             <p>Il s'agit de la représentation modélisée qui précède l'implémentation dans le SGBDR.</p>
             <p>On retrouve les clés primaires et etrangères, la mise en auto-incrément, la mise en valeure non nulle et les types de valeures des attributs (DATETIME, DATE, VARCHAR, INT...).</p>
             <div className="img-article">
-                <img src={Image} alt="exemple de MPD" />
+                <LazyLoadImage src={Image} alt="exemple de MPD" />
             </div>
         </article>
     )

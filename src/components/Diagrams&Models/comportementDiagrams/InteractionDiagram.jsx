@@ -4,6 +4,7 @@ import Image from './../../../img/UML-apercu-interaction-1.png'
 import Image2 from './../../../img/UML-apercu-interaction-2.png'
 import Image3 from './../../../img/UML-apercu-interaction-3.png'
 import Image4 from './../../../img/UML-apercu-interaction-4.png'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const InteractionDiagram = () => {
 
@@ -35,14 +36,14 @@ const InteractionDiagram = () => {
                 dans le coin supérieur gauche. Le nom du diagramme, référencé, est affiché au centre du champ.
             </p>
             <div className="img-article">
-                <img src={Image}
+                <LazyLoadImage src={Image}
                     alt="exemple de diagramme d'aperçu d'interaction UML" onClick={() => openModal(Image)} />
             </div>
             <p>Éléments d'interaction sont semblables aux occurrences d'interaction. Donc, ils affichent une
                 représentation de diagrammes d'interaction existants dans un cadre rectangulaire. Ils sont
                 différents en ce qu'ils affichent le contenu de la ligne des références du diagramme.</p>
             <div className="img-article">
-                <img src={Image2}
+                <LazyLoadImage src={Image2}
                     alt="autre exemple de diagramme d'aperçu d'interaction UML" onClick={() => openModal(Image2)} />
             </div>
             <p>Tous les mêmes contrôles de diagrammes d'activité (fourche, joindre, fusionner, etc.) peut être
@@ -51,12 +52,12 @@ const InteractionDiagram = () => {
                 vente de l'échantillon, avec des sous-processus abstraits dans les occurrences d'interaction.
             </p>
             <div className="img-article">
-                <img src={Image3}
+                <LazyLoadImage src={Image3}
                     alt="autre exemple de diagramme d'aperçu d'interaction UML" onClick={() => openModal(Image3)} />
             </div>
             <p>Voici un exemple plus complet</p>
             <div className="img-article">
-                <img src={Image4}
+                <LazyLoadImage src={Image4}
                     alt="autre exemple de diagramme d'aperçu d'interaction UML" onClick={() => openModal(Image4)} />
             </div>
             {isModalOpen && <Modal imageUrl={selectedImage} onClose={closeModal} />}

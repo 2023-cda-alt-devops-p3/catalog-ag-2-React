@@ -2,6 +2,7 @@ import React, {useState } from 'react'
 import Modal from './../../Modal'
 import Image from './../../../img/UML-activite-1.png'
 import Image2 from './../../../img/UML-activite-2.png'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ActivityDiagram = () => {
 
@@ -23,10 +24,10 @@ const ActivityDiagram = () => {
             <p className="subtitle">Diagramme d'activité UML</p>
             <p>Le langage UML est extrêmement utile pour visualiser et documenter des systèmes logiciels, mais
                 la terminologie est parfois un peu déroutante pour quelqu'un qui ne connaît pas bien ce langage.
-                Fondamentalement, un diagramme d’activités est un organigramme illustrant les activités
+                Fondamentalement, un diagramme d'activités est un organigramme illustrant les activités
                 exécutées par un système.</p>
             <p>Les diagrammes d'activités présentent plusieurs avantages pour les utilisateurs. Songez à créer
-                un diagramme d’activités pour :</p>
+                un diagramme d'activités pour :</p>
             <ol>
                 <li>Démontrer la logique d'un algorithme</li>
                 <li>Décrire les étapes effectuées dans un cas d'utilisation d'UML</li>
@@ -53,10 +54,10 @@ const ActivityDiagram = () => {
                     cercle noir avec un contour.</li>
             </ol>
             <div className="img-article">
-                <img src={Image} alt="exemple de diagramme d'activité UML" onClick={() => openModal(Image)} />
+                <LazyLoadImage src={Image} alt="exemple de diagramme d'activité UML" onClick={() => openModal(Image)} />
             </div>
             <div className="img-article">
-                <img src={Image2} alt="autre exemple de diagramme d'activité UML" onClick={() => openModal(Image2)} />
+                <LazyLoadImage src={Image2} alt="autre exemple de diagramme d'activité UML" onClick={() => openModal(Image2)} />
             </div>
             {isModalOpen && <Modal imageUrl={selectedImage} onClose={closeModal} />}
         </article>

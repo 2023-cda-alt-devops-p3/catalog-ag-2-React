@@ -5,6 +5,7 @@ import Image2 from './../../../img/UML-cas-utilisation-2.png'
 import Image3 from './../../../img/UML-cas-utilisation-3.png'
 import Image4 from './../../../img/UML-cas-utilisation-4.png'
 import Image5 from './../../../img/UML-cas-utilisation-5.png'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const UseCaseDiagram = () => {
 
@@ -56,7 +57,7 @@ const UseCaseDiagram = () => {
                 <li>modéliser le flux de base des événements dans un cas d'utilisation.</li>
             </ol>
             <div className="img-article">
-                <img src={Image} alt="exemple de diagramme de cas d'utilisation UML" onClick={() => openModal(Image)} />
+                <LazyLoadImage src={Image} alt="exemple de diagramme de cas d'utilisation UML" onClick={() => openModal(Image)} />
             </div>
             <p>Pour répondre à la question « Qu'est-ce qu'un diagramme de cas d'utilisation ? », vous devez
                 d'abord comprendre les éléments qui le composent. Ceux-ci incluent généralement :</p>
@@ -73,7 +74,7 @@ const UseCaseDiagram = () => {
                     décrire les activités et les variantes utilisées pour atteindre l'objectif.</li>
             </ol>
             <div className="img-article">
-                <img src={Image2}
+                <LazyLoadImage src={Image2}
                     alt="autre exemple de diagramme de cas d'utilisation UML" onClick={() => openModal(Image2)}  />
             </div>
             <p>La notation d'un diagramme de cas d'utilisation est assez simple et n'implique pas autant de
@@ -100,15 +101,15 @@ const UseCaseDiagram = () => {
                     fichiers.</li>
             </ol>
             <div className="img-article">
-                <img src={Image3}
+                <LazyLoadImage src={Image3}
                     alt="autre exemple de diagramme de cas d'utilisation UML" onClick={() => openModal(Image3)} />
             </div>
             <div className="img-article">
-                <img src={Image4}
+                <LazyLoadImage src={Image4}
                     alt="autre exemple de diagramme de cas d'utilisation UML" onClick={() => openModal(Image4)} />
             </div>
             <div className="img-article">
-                <img src={Image5}
+                <LazyLoadImage src={Image5}
                     alt="autre exemple de diagramme de cas d'utilisation UML" onClick={() => openModal(Image5)} />
             </div>
             {isModalOpen && <Modal imageUrl={selectedImage} onClose={closeModal} />}

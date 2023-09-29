@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Modal from './../../Modal'
 import Image from './../../../img/UML-Classes.png'
 import Image2 from './../../../img/UML-Classes-2.png'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ClassDiagram = () => {
 
@@ -90,11 +91,11 @@ const ClassDiagram = () => {
                 tels que des documents, des bases de données, des fichiers exécutables, des composants
                 logiciels, etc.</li>
             <div className="img-article">
-                <img src={Image} alt="diagramme de classes UML" onClick={() => openModal(Image)} />
+                <LazyLoadImage src={Image} alt="diagramme de classes UML" onClick={() => openModal(Image)} />
             </div>
             <p>Exemple détaillé d'un diagramme de classes</p>
             <div className="img-article">
-                <img src={Image2} alt="autre exemple de diagramme de classes UML" onClick={() => openModal(Image2)} />
+                <LazyLoadImage src={Image2} alt="autre exemple de diagramme de classes UML" onClick={() => openModal(Image2)} />
             </div>
             <ol>
                 <li>Shape est une classe abstraite. Il est indiqué en italique.</li>
