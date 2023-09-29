@@ -42,7 +42,7 @@ const ActivityDiagram = () => {
                 constitué. Voici quelques-uns des composants les plus courants d'un diagramme d'activités :</p>
             <ol>
                 <li>Action : étape dans l'activité où les utilisateurs ou le logiciel exécutent une tâche
-                    donnée. Dans Lucidchart, les actions sont symbolisées par des rectangles aux bords arrondis.
+                    donnée. Les actions sont symbolisées par des rectangles aux bords arrondis.
                 </li>
                 <li>Nœud de décision : embranchement conditionnel dans le flux, qui est représenté par un
                     losange. Il comporte une seule entrée et au moins deux sorties.</li>
