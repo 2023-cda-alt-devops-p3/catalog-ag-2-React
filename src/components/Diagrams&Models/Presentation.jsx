@@ -32,6 +32,7 @@ const Presentation = () => {
       <div className="img-article">
         <LazyLoadImage src={Image} alt="exemple avec les types de diagrammes UML" onClick={() => openModal(Image)} />
       </div>
+      <hr />
       <p>La <b>méthode Merise</b> propose une approche de la conception séparant l'étude des données de celle des traitements, en avançant progressivement par niveaux.</p>
       <p>Chacun de ces niveaux a pour objectif principal de fournir un certain nombre de documents (MCD, MPD, MCT, ...) permettant ainsi la synthèse textuelle d'un processus de réflexion.</p>
       <p>La méthode Merise propose trois niveaux de représentation d'un système

@@ -132,6 +132,13 @@ p {
   font-weight: 400;
 }
 
+hr {
+  height: 2px;
+  background-color: #88c057;
+  border: none;
+  margin: 20px -10px;
+}
+
 img {
   width: 500px;
   max-width: 100%;
@@ -164,6 +171,7 @@ img {
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   text-align: center;
+
   img {
     width: 100%;
     height: 100%;
@@ -218,7 +226,7 @@ img {
   .section {
     margin-top: 10px;
     margin-left: 0px;
-  }  
+  }
 }
 
 @media (max-width: 991px) {
