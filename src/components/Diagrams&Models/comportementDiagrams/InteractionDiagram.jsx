@@ -24,14 +24,14 @@ const InteractionDiagram = () => {
     return (
         <article className="article" id="diagramme-d-aperçu-d-interaction-UML">
             <p className="subtitle">Diagramme d'aperçu d'interaction UML</p>
-            <p>Un diagramme d'aperçu d'interaction est une forme d'un diagramme d'activité. Dans lequel les
-                noeuds représentent des diagrammes d'interaction. Diagrammes d'interaction peuvent inclure la
+            <p>Un diagramme d'aperçu d'interaction est une <b>forme d'un diagramme d'activité dans lequel les
+                noeuds représentent des diagrammes d'interaction</b>. Diagrammes d'interaction peuvent inclure la
                 séquence, la communication, l'interaction et la liste de chronogrammes. La plupart de la
                 notation pour des diagrammes de vue d'ensemble d'interaction est la même pour des diagrammes
-                d'activité. Par exemple, initiale, finale, décision, fusionner, fourchette et rejoindre nouds
+                d'activité. Par exemple, initiale, finale, décision, fusionner, fourchette et rejoindre
                 sont tous les mêmes. Cependant, aperçu interaction diagrammes introduisent deux nouveaux
                 éléments: occurrences d'interaction et des éléments d'interaction.</p>
-            <p>Les occurrences d'interaction sont des références aux diagrammes d'interaction existants. Une
+            <p>Les <i>occurrences d'interaction</i> sont des références aux diagrammes d'interaction existants. Une
                 occurrence d'interaction est indiquée par un cadre de référence; qui est, un cadre avec "ref"
                 dans le coin supérieur gauche. Le nom du diagramme, référencé, est affiché au centre du champ.
             </p>
@@ -39,7 +39,7 @@ const InteractionDiagram = () => {
                 <LazyLoadImage src={Image}
                     alt="exemple de diagramme d'aperçu d'interaction UML" onClick={() => openModal(Image)} />
             </div>
-            <p>Éléments d'interaction sont semblables aux occurrences d'interaction. Donc, ils affichent une
+            <p><i>Éléments d'interaction</i> sont semblables aux occurrences d'interaction. Donc, ils affichent une
                 représentation de diagrammes d'interaction existants dans un cadre rectangulaire. Ils sont
                 différents en ce qu'ils affichent le contenu de la ligne des références du diagramme.</p>
             <div className="img-article">

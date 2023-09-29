@@ -19,13 +19,13 @@ const Nav = ({ onButtonClick }) => {
             <div>
                 <button onClick={() => displayOnOff('olStructure')}>Diagrammes UML de structure</button>
                 <ol className={`navList ${openSection === 'olStructure' ? 'displayOn' : 'displayOff'}`} id='olStructure'>
-                    <li><a href='#textBeginning'><button onClick={() => onButtonClick('class-diagram')}>Diagrammes de classes</button></a></li>
+                    <li><a href='#textBeginning'><button onClick={() => onButtonClick('class-diagram')}>Diagrammes de Classes</button></a></li>
                     <li><a href='#textBeginning'><button onClick={() => onButtonClick('object-diagram')}>Diagrammes d'Objets</button></a></li>
                     <li><a href='#textBeginning'><button onClick={() => onButtonClick('componant-diagram')}>Diagrammes de Composants</button></a></li>
                     <li><a href='#textBeginning'><button onClick={() => onButtonClick('composite-structure-diagram')}>Diagrammes de Structure Composites</button></a></li>
                     <li><a href='#textBeginning'><button onClick={() => onButtonClick('deployment-diagram')}>Diagrammes de Déploiement</button></a></li>
                     <li><a href='#textBeginning'><button onClick={() => onButtonClick('packaging-diagram')}>Diagrammes de Paquetage</button></a></li>
-                    <li><a href='#textBeginning'><button onClick={() => onButtonClick('profil-diagram')}>Diagrammes de profil</button></a></li>
+                    <li><a href='#textBeginning'><button onClick={() => onButtonClick('profil-diagram')}>Diagrammes de Profil</button></a></li>
                 </ol>
             </div>
             <div>

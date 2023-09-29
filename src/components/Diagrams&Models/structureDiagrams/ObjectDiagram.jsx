@@ -36,17 +36,18 @@ const ObjectDiagram = () => {
                 représenter les classes qui seront effectivement programmées, les principaux objets ou les
                 interactions entre classes et objets. </p>
             <ol>
-                <li><i>Objets</i> : Les objets désignent les instances d'une classe. Par exemple, si « voiture » est une
+                <li>- <i>Objets</i> : Les objets désignent les instances d'une classe. Par exemple, si « voiture » est une
                     classe, « Nissan Altima 2007 » est un objet de cette classe.</li>
-                <li><i>Titres de classe</i> : Les titres de classes sont les attributs spécifiques d'une classe donnée.
+                <li>- <i>Titres de classe</i> : Les titres de classes sont les attributs spécifiques d'une classe donnée.
                     Dans le diagramme
                     d'objets arbre généalogique, ce sont le nom, le sexe et l'âge des membres de la famille. Ils
                     peuvent apparaître en tant qu'éléments sur l'objet, voire dans les propriétés de l'objet
                     même (par exemple la couleur).</li>
-                <li><i>Attributs de classe</i> : Les attributs de classe sont représentés par un rectangle avec deux
+                <li>- <i>Attributs de classe</i> : Les attributs de classe sont représentés par un rectangle avec deux
                     onglets qui indique un élément de logiciel.</li>
-                <li><i>Liens</i> : Les liens correspondent aux lignes qui relient deux formes d'un diagramme d'objets.
+                <li>- <i>Liens</i> : Les liens correspondent aux lignes qui relient deux formes d'un diagramme d'objets.
                 </li>
+                <p>Voici comment passer d'un diagramme de classes à un diagramme d'objets :</p>
             </ol>
             <div className="img-article">
                 <LazyLoadImage src={Image} alt="exemple de diagramme d'objets UML" onClick={() => openModal(Image)} />
