@@ -22,7 +22,7 @@ const TimeDiagram = () => {
 
     return (
         <article className="article" id="diagramme-de-temps-UML">
-            <p className="subtitle">Diagramme de Temps UML</p>
+            <h2 className="subtitle">Diagramme de Temps UML</h2>
             <p>UML Diagrammes de Temps sont utilisés pour <b>afficher le changement de state ou de la valeur d'un
                 ou plusieurs éléments au fil du temps</b>. Il peut également <b>montrer l'interaction entre les
                 événements prévus et le temps et les contraintes de durée, qui les dirigent</b>.</p>

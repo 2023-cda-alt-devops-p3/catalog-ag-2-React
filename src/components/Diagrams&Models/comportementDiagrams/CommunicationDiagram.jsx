@@ -21,7 +21,7 @@ const CommunicationDiagram = () => {
 
     return (
         <article className="article" id="diagramme-de-communication-UML">
-            <p className="subtitle">Diagramme de communication UML</p>
+            <h2 className="subtitle">Diagramme de communication UML</h2>
             <p>En langage UML, un diagramme de communication <b>représente les interactions entre les objets ou les
                 rôles associés aux lignes de vie et les messages transmis entre les lignes de vie</b>. Dans les
                 versions précédentes d'UML, ce diagramme s'appelait diagramme de collaboration et avait une

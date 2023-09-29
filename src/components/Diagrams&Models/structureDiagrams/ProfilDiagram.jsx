@@ -21,7 +21,7 @@ const ProfilDiagram = () => {
 
     return (
         <article className="article" id="diagramme-de-profil-UML">
-            <p className="subtitle">Diagramme de profil UML</p>
+            <h2 className="subtitle">Diagramme de profil UML</h2>
             <p>Le <b>diagramme de profil</b>, une sorte de diagramme structurel dans le langage de modélisation unifié (UML), fournit un <b>mécanisme d'extension générique pour personnaliser les modèles UML pour des domaines et des plates-formes particuliers</b>. Les mécanismes d'extension permettent d'affiner la sémantique standard de manière strictement additive, en évitant qu'elle ne contredise la sémantique standard. Les profils sont définis à l'aide de stéréotypes, de définitions de valeurs balisées et de contraintes appliquées à des éléments de modèle spécifiques, tels que les classes, les attributs, les opérations et les activités.</p>
             <ol>
                 <li>Les <b>stéréotypes</b> permettent d'enrichir le vocabulaire UML. Vous pouvez ajouter ou créer de nouveaux éléments de modèle, dérivés d'éléments existants mais possédant des propriétés spécifiques adaptées à votre domaine problématique. Les stéréotypes sont utilisés pour introduire de nouveaux éléments de base qui parlent le langage de votre domaine et semblent primitifs. Il permet d'introduire de nouveaux symboles graphiques.</li>

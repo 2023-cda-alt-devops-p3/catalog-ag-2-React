@@ -24,7 +24,7 @@ const UseCaseDiagram = () => {
 
     return (
         <article className="article" id="diagramme-de-cas-d-utilisation-UML">
-            <p class="subtitle">Diagramme de cas d'utilisation UML</p>
+            <h2 class="subtitle">Diagramme de cas d'utilisation UML</h2>
             <p>En langage de modélisation unifié (UML), un diagramme de cas d'utilisation peut servir à <b>résumer
                 les informations des utilisateurs de votre système (également appelés acteurs) et leurs
                 interactions avec ce dernier</b>. La création de ce type de diagramme UML requiert un ensemble de

@@ -21,7 +21,7 @@ const MFD = () => {
 
     return (
         <article className="article" id="modele-flux-des-donnees-MERISE">
-            <p className="subtitle">Modèle de Flux des Données MERISE</p>
+            <h2 className="subtitle">Modèle de Flux des Données MERISE</h2>
             <p>Les flux d'informations sont un échange d'informations (message) entre des acteurs (externes ou
                 internes au système étudié) et le domaine étudié. On appelle Diagramme des flux, une
                 modélisation qui représente uniquement ces flux échangés, sans chronologie et sans description

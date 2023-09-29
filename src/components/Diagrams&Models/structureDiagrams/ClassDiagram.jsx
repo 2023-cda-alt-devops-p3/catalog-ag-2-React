@@ -21,7 +21,7 @@ const ClassDiagram = () => {
 
     return (
         <article className="article" id="diagramme-de-classes-UML">
-            <p className="subtitle">Diagramme de classes UML</p>
+            <h2 className="subtitle">Diagramme de classes UML</h2>
             <p>Les diagrammes de classes sont l'un des types de diagrammes UML les plus utiles, car ils
                 décrivent clairement la structure d'un système particulier en <b>modélisant ses classes, ses
                     attributs, ses opérations et les relations entre ses objets</b>.</p>

@@ -21,7 +21,7 @@ const PackagingDiagram = () => {
 
     return (
         <article className="article" id="diagramme-de-paquetages-UML">
-            <p className="subtitle">Diagramme de paquetages UML</p>
+            <h2 className="subtitle">Diagramme de paquetages UML</h2>
             <p>Les diagrammes de package (ou diagramme de paquetages) sont des diagrammes structurels utilisés
                 pour <b>représenter l'organisation et la disposition de divers éléments modélisés sous forme de
                 paquetages</b>. Un paquetage est un regroupement d'éléments UML apparentés, tels que des diagrammes,

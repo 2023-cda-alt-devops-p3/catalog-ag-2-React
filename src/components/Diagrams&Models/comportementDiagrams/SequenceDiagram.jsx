@@ -21,7 +21,7 @@ const SequenceDiagram = () => {
 
     return (
         <article class="article" id="diagramme-de-sequence-UML">
-            <p class="subtitle">Diagramme de sequence UML</p>
+            <h2 class="subtitle">Diagramme de sequence UML</h2>
             <p>Les diagrammes de séquence sont une solution populaire de modélisation dynamique en langage UML,
                 car ils se <b>concentrent plus précisément sur les lignes de vie, les processus et les objets qui
                 vivent simultanément, et les messages qu'ils échangent entre eux pour exercer une fonction avant

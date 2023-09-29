@@ -23,7 +23,7 @@ const MCT = () => {
 
   return (
     <article className="article" id="modele-conceptuel-des-traitements-MERISE">
-      <p className="subtitle">Modèle Conceptuel des Traitements MERISE</p>
+      <h2 className="subtitle">Modèle Conceptuel des Traitements MERISE</h2>
       <p>Le diagramme ci-après est un MCT "classique" qui présente les deux opérations (les deux "temps"
         métiers) qui constituent le processus "Gestion des sinistres".</p>
       <div className="img-article">

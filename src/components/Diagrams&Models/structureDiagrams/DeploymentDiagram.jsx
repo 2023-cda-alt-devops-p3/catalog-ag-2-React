@@ -23,7 +23,7 @@ const DeploymentDiagram = () => {
 
     return (
         <article className="article" id="diagramme-de-deploiement-UML">
-            <p className="subtitle">Diagramme de deploiement UML</p>
+            <h2 className="subtitle">Diagramme de deploiement UML</h2>
             <p>Dans UML, les diagrammes de déploiement <b>modélisent l'architecture physique d'un système</b>. Les diagrammes de déploiement affichent les relations entre les composants logiciels et matériels du système, d'une part, et la distribution physique du traitement, d'autre part. Les diagrammes de déploiement, que vous préparez généralement pendant la phase d'implémentation du développement, présentent la disposition physique des noeuds dans un système réparti, les artefacts qui sont stockés sur chaque noeud et les composants et autres éléments que les artefacts implémentent. Les noeuds représentent des périphériques matériels tels que des ordinateurs, des détecteurs et des imprimantes, ainsi que d'autres périphériques qui prennent en charge l'environnement d'exécution d'un système. Les chemins de communication et les relations de déploiement modélisent les connexions dans le système.</p>
             <p>Les diagrammes de déploiement sont utiles dans plusieurs domaines. Vous pouvez les utiliser pour
                 :</p>

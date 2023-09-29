@@ -22,7 +22,7 @@ const MCD = () => {
 
     return (
         <article className="article" id="modele-conceptuel-des-donnees-MERISE">
-            <p className="subtitle">Modèle Conceptuel des Données MERISE</p>
+            <h2 className="subtitle">Modèle Conceptuel des Données MERISE</h2>
             <p>Le MCD permet de <b>représenter le système d'information indépendamment de son aspect informatique</b>.</p>
             <p>Une <b>entité</b> regroupe des informations de même nature, ces informations sont représentées par les
                 attributs de l'entité.</p>

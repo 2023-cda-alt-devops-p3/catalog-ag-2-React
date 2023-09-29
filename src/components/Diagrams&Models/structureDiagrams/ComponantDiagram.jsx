@@ -23,7 +23,7 @@ const ComponantDiagram = () => {
 
     return (
         <article className="article" id="diagramme-de-composants-UML">
-            <p className="subtitle">Diagramme de composants UML</p>
+            <h2 className="subtitle">Diagramme de composants UML</h2>
             <p>Un diagramme de composants a pour objectif d'<b>illustrer la relation entre les différents
                 composants</b> d'un système. Dans le cadre de l'UML 2.0, le terme « composant » fait référence à un
                 module de classes qui représentent des systèmes ou des sous-systèmes indépendants ayant la
