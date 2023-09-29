@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Modal from './../../Modal'
 import Image from './../../../img/UML-paquetages-1.png'
 import Image2 from './../../../img/UML-paquetages-2.png'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const PackagingDiagram = () => {
 
@@ -30,7 +31,7 @@ const PackagingDiagram = () => {
                 pour donner un aperçu visuel de l'architecture en couches d'un classifieur UML, tel qu'un
                 système logiciel.</p>
             <div className="img-article">
-                <img src={Image} alt="exemple de diagramme de paquetages UML" onClick={() => openModal(Image)} />
+                <LazyLoadImage src={Image} alt="exemple de diagramme de paquetages UML" onClick={() => openModal(Image)} />
             </div>
             <p>Un diagramme de package bien conçu offre de nombreux avantages aux personnes souhaitant créer une
                 représentation graphique de leur système ou projet UML.</p>
@@ -82,7 +83,7 @@ const PackagingDiagram = () => {
                     nouveau paquetage.</li>
             </ol>
             <div className="img-article">
-                <img src={Image2} alt="autre exemple de diagramme de paquetages UML" onClick={() => openModal(Image2)} />
+                <LazyLoadImage src={Image2} alt="autre exemple de diagramme de paquetages UML" onClick={() => openModal(Image2)} />
             </div>
             {isModalOpen && <Modal imageUrl={selectedImage} onClose={closeModal} />}
         </article>

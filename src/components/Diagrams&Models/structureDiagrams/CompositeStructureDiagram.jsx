@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Modal from './../../Modal'
 import Image from './../../../img/UML-Composite-1.png'
 import Image2 from './../../../img/UML-Composite-2.png'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const CompositeStructureDiagram = () => {
 
@@ -26,7 +27,7 @@ const CompositeStructureDiagram = () => {
                 un classifieur structuré donné, en définissant ses classes de configuration, ses interfaces, ses
                 packages et les liens qui les unissent dans le détail.</p>
             <div className="img-article">
-                <img src={Image} alt="exemple de diagramme de structures composites UML" onClick={() => openModal(Image)} />
+                <LazyLoadImage src={Image} alt="exemple de diagramme de structures composites UML" onClick={() => openModal(Image)} />
             </div>
             <p>Un diagramme de structure composite permet aux utilisateurs de déterminer précisément ce qui est
                 contenu dans un objet, en spécifiant la manière dont différentes propriétés interagissent pour
@@ -71,7 +72,7 @@ const CompositeStructureDiagram = () => {
                 au sein de votre système, optez pour un diagramme de structure composite.
             </p>
             <div className="img-article">
-                <img src={Image2}
+                <LazyLoadImage src={Image2}
                     alt="autre exemple de diagramme de structures composites UML" onClick={() => openModal(Image2)} />
             </div>
             {isModalOpen && <Modal imageUrl={selectedImage} onClose={closeModal} />}

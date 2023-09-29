@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Modal from './../../Modal'
 import Image from './../../../img/UML-sequence-1.png'
 import Image2 from './../../../img/UML-sequence-2.png'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const SequenceDiagram = () => {
 
@@ -47,10 +48,10 @@ const SequenceDiagram = () => {
                 </li>
             </ol>
             <div className="img-article">
-                <img src={Image} alt="exemple de diagramme de séquence UML" onClick={() => openModal(Image)} />
+                <LazyLoadImage src={Image} alt="exemple de diagramme de séquence UML" onClick={() => openModal(Image)} />
             </div>
             <div className="img-article">
-                <img src={Image2} alt="autre exemple de diagramme de séquence UML" onClick={() => openModal(Image2)} />
+                <LazyLoadImage src={Image2} alt="autre exemple de diagramme de séquence UML" onClick={() => openModal(Image2)} />
             </div>
             {isModalOpen && <Modal imageUrl={selectedImage} onClose={closeModal} />}
         </article>

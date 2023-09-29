@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from './../../../img/MERISE_MCD-2.png'
 import Image2 from './../../../img/MERISE_MCD-3.png'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const MCD = () => {
     return (
@@ -27,11 +28,11 @@ const MCD = () => {
             </ol>
             <p><i>Exemple de MCD :</i></p>
             <div className="img-article">
-                <img src={Image} alt="exemple de MCD" />
+                <LazyLoadImage src={Image} alt="exemple de MCD" />
             </div>
             <p><i>Autre Exemple de MCD :</i></p>
             <div className="img-article">
-                <img src={Image2} alt="autre exemple de MCD" />
+                <LazyLoadImage src={Image2} alt="autre exemple de MCD" />
             </div>
         </article>
     )

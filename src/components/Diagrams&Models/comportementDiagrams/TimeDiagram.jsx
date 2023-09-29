@@ -3,6 +3,7 @@ import Modal from './../../Modal'
 import Image from './../../../img/UML-temps-1.png'
 import Image2 from './../../../img/UML-temps-2.png'
 import Image3 from './../../../img/UML-temps-3.png'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const TimeDiagram = () => {
 
@@ -29,14 +30,14 @@ const TimeDiagram = () => {
                 affichages d’Axe des abscisses le temps écoulé dans n’importe quelles unités est choisi, tandis
                 que l’Axe des ordonnées est étiqueté d’une liste donnée du states.</p>
             <div className="img-article">
-                <img src={Image} alt="exemple de diagramme de temps UML" onClick={() => openModal(Image)} />
+                <LazyLoadImage src={Image} alt="exemple de diagramme de temps UML" onClick={() => openModal(Image)} />
             </div>
             <p>Un Ligne de Vie de Valeur montre le changement de valeur d’un article au fil du temps. Les
                 affichages d’Axe des abscisses le temps écoulé dans n’importe quelles unités sont choisis, le
                 même quant à le State de Ligne de Vie. On montre la valeur entre la paire des lignes
                 horizontales qui traversent à chaque changement de la valeur.</p>
             <div className="img-article">
-                <img src={Image2} alt="autre exemple de diagramme de temps UML" onClick={() => openModal(Image2)} />
+                <LazyLoadImage src={Image2} alt="autre exemple de diagramme de temps UML" onClick={() => openModal(Image2)} />
             </div>
             <p>State and value State et Lignes de Vie peuvent être empilés les uns sur les autres dans une
                 combinaison quelconque. Ils doivent avoir le même axe-X. Les messages peuvent être transmis
@@ -46,7 +47,7 @@ const TimeDiagram = () => {
                 pour. Une fois celles-ci ont toutes été appliquées, un diagramme de temps peut ressembler le
                 suivant.</p>
             <div className="img-article">
-                <img src={Image3} alt="autre exemple de diagramme de temps UML" onClick={() => openModal(Image3)} />
+                <LazyLoadImage src={Image3} alt="autre exemple de diagramme de temps UML" onClick={() => openModal(Image3)} />
             </div>
             {isModalOpen && <Modal imageUrl={selectedImage} onClose={closeModal} />}
         </article>

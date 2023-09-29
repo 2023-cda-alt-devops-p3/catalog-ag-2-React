@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Modal from './../../Modal'
 import Image from './../../../img/UML-profil-1.png'
 import Image2 from './../../../img/UML-profil-2.png'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ProfilDiagram = () => {
 
@@ -31,10 +32,10 @@ const ProfilDiagram = () => {
                 <li>Ce sont les <b>propriétés</b> permettant de spécifier une sémantique ou des conditions qui doivent rester vraies à tout moment. Il vous permet d'étendre la sémantique du bloc de construction UML en ajoutant de nouveaux protocoles. Graphiquement, une contrainte est rendue sous forme de chaîne entourée de parenthèses placées à proximité de l'élément associé. Par exemple : Lors du développement d'un système temps réel, il est nécessaire d'agrémenter le modèle de certaines informations nécessaires telles que le temps de réponse. Une contrainte définit une relation entre les éléments du modèle qui doit être utilisée subset ou xor. Les contraintes peuvent porter sur des attributs, des attributs dérivés et des associations. Il peut également être attaché à un ou plusieurs éléments du modèle affichés sous forme de note.</li>
             </ol>
             <div className="img-article">
-                <img src={Image} alt="autre exemple de diagramme de paquetages UML" onClick={() => openModal(Image)} />
+                <LazyLoadImage src={Image} alt="autre exemple de diagramme de paquetages UML" onClick={() => openModal(Image)} />
             </div>
             <div className="img-article">
-                <img src={Image2} alt="autre exemple de diagramme de paquetages UML" onClick={() => openModal(Image2)} />
+                <LazyLoadImage src={Image2} alt="autre exemple de diagramme de paquetages UML" onClick={() => openModal(Image2)} />
             </div>
             {isModalOpen && <Modal imageUrl={selectedImage} onClose={closeModal} />}
         </article>

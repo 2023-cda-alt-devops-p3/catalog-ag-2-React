@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from './../../../img/MERISE_MFD-1.png'
 import Image2 from './../../../img/MERISE_MFD-2.png'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const MFD = () => {
     return (
@@ -18,13 +19,13 @@ const MFD = () => {
                 Le diagramme des flux ci-dessous est dit "de contexte" car il montre globalement les principaux
                 flux entre le domaine étudié (la branche Auto) et les acteurs de son environnement.</p>
             <div className="img-article">
-                <img src={Image} alt="exemple de modèle de flux de données" />
+                <LazyLoadImage src={Image} alt="exemple de modèle de flux de données" />
             </div>
             <p>Le diagramme des flux suivant expose les principaux processus du domaine et les flux associés à
                 ces processus. Un tel diagramme est une transition entre un diagramme des flux de contexte et un
                 "macro-MCT".</p>
             <div className="img-article">
-                <img src={Image2} alt="exemple de modèle de flux de données" />
+                <LazyLoadImage src={Image2} alt="exemple de modèle de flux de données" />
             </div>
         </article>
     )
