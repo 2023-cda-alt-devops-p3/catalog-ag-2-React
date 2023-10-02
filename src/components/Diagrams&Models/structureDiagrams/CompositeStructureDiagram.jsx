@@ -21,7 +21,7 @@ const CompositeStructureDiagram = () => {
 
     return (
         <article className="article" id="diagramme-de-structures-composites-UML">
-            <p className="subtitle">Diagramme de structures composites UML</p>
+            <h2 className="subtitle">Diagramme de structures composites UML</h2>
             <p>Un diagramme de structure composite est un diagramme structurel UML qui fournit une <b>vue
                 d'ensemble logique de l'ensemble ou d'une partie d'un système logiciel</b>. Il permet de visualiser
                 un classifieur structuré donné, en définissant ses classes de configuration, ses interfaces, ses

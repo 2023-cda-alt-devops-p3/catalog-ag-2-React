@@ -23,7 +23,7 @@ const InteractionDiagram = () => {
 
     return (
         <article className="article" id="diagramme-d-aperçu-d-interaction-UML">
-            <p className="subtitle">Diagramme d'aperçu d'interaction UML</p>
+            <h2 className="subtitle">Diagramme d'aperçu d'interaction UML</h2>
             <p>Un diagramme d'aperçu d'interaction est une <b>forme d'un diagramme d'activité dans lequel les
                 noeuds représentent des diagrammes d'interaction</b>. Diagrammes d'interaction peuvent inclure la
                 séquence, la communication, l'interaction et la liste de chronogrammes. La plupart de la

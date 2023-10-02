@@ -24,7 +24,7 @@ const ObjectDiagram = () => {
 
     return (
         <article className="article" id="diagramme-d-objets-UML">
-            <p className="subtitle">Diagramme d'objets UML</p>
+            <h2 className="subtitle">Diagramme d'objets UML</h2>
             <p>Un diagramme d'objets UML représente une <b>instance spécifique d'un diagramme de classes</b> à un
                 moment précis. Dans sa représentation visuelle, il est très similaire à un diagramme de classes.
             </p>

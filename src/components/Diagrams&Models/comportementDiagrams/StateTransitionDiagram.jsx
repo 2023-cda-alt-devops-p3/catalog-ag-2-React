@@ -22,7 +22,7 @@ const StateTransitionDiagram = () => {
 
     return (
         <article className="article" id="diagramme-etats-transitions-UML">
-            <p className="subtitle">Diagramme d'états-transitions UML</p>
+            <h2 className="subtitle">Diagramme d'états-transitions UML</h2>
             <p>Un diagramme d'états-transitions est un type de diagramme comportemental en langage de
                 modélisation unifié (UML) qui <b>représente les transitions entre divers objets</b>.</p>
             <p>Un automate désigne tout appareil qui enregistre l'état d'un objet à un moment donné et peut

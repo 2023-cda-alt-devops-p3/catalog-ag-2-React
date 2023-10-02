@@ -21,7 +21,7 @@ const ActivityDiagram = () => {
 
     return (
         <article className="article" id="diagramme-activite-UML">
-            <p className="subtitle">Diagramme d'activité UML</p>
+            <h2 className="subtitle">Diagramme d'activité UML</h2>
             <p>Le langage UML est extrêmement utile pour visualiser et documenter des systèmes logiciels, mais
                 la terminologie est parfois un peu déroutante pour quelqu'un qui ne connaît pas bien ce langage.
                 Fondamentalement, un diagramme d'activités est un <b>organigramme illustrant les activités

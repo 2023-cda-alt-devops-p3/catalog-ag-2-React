@@ -21,7 +21,7 @@ const MLD = () => {
 
     return (
         <article className="article" id="modele-logique-des-donnees-MERISE">
-            <p className="subtitle">Modèle Logique des Données MERISE</p>
+            <h2 className="subtitle">Modèle Logique des Données MERISE</h2>
             <p>Un modèle logique de données relationnel (MLD-R) est la représentation des données d'un système
                 d'information réalisé en vue d'une mise en oeuvre au sein d'un système de gestion de base de
                 données relationnel (SGBD-R). Les données sont représentées sous forme de tables et de relations
